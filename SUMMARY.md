@@ -40,9 +40,9 @@
 ### Part II: Low-level Case Studies
 
 * [Software for Analyzing Supernova Light Curve Data for Cosmology](case-studies/kbarbary.md)
-* [Problem-Specific Analysis of Molecular Dynamics Trajectories for Biomolecules](case-studies/fatmai.md)
-* [Developing an Open, Modular Simulation Framework for Nuclear Fuel Cycle Analysis](case-studies/khinsen.md)
-* [pyMooney: Generating a Database of Two-Tone, Mooney Images](case-studies/khuff.md)
+* [pyMooney: Generating a Database of Two-Tone, Mooney Images](case-studies/fatmai.md)
+* [Problem-Specific Analysis of Molecular Dynamics Trajectories for Biomolecules](case-studies/khinsen.md)
+* [Developing an Open, Modular Simulation Framework for Nuclear Fuel Cycle Analysis](case-studies/khuff.md)
 * [Producing a Journal Article on Probabilistic Tsunami Hazard Assessment](case-studies/rjleveque.md)
 * [A Reproducible Neuroimaging Workflow using the Automated Build Tool "make"](case-studies/tmadhyastha.md)
 * [Generation of Uniform Data Products for AmeriFlux and FLUXNET](case-studies/gzpastorello.md)
