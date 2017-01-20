@@ -37,7 +37,7 @@
 * [Detection and Classification of Cervical Cells](case-studies/dushizima.md)
 * [Enabling Astronomy Image Processing With Cloud Computing Using Apache Spark](case-studies/zzhang.md)
 
-### Part II: Low-level Case Studies
+### Part III: Low-level Case Studies
 
 * [Software for Analyzing Supernova Light Curve Data for Cosmology](case-studies/kbarbary.md)
 * [pyMooney: Generating a Database of Two-Tone, Mooney Images](case-studies/fatmai.md)
