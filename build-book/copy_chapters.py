@@ -98,7 +98,9 @@ for i in range(len(tab.index)):
                 dash_line_count += 1
 
             # Handle header levels (drop two levels to allow title, author)
-            if line[0:2] == "# ":
+            # (Use trailing space to avoid replacing actual number signs)
+            if (line[0:2] == "# ") or (line[0:3] == "## ") or \
+               (line[0:4] == "### ") or (line[0:5] == "#### "):
                 line = "##" + line
 
             # Handle image lines
