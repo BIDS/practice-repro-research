@@ -23,7 +23,7 @@
 * [Developing and Analyzing Exact-Diagonalization Simulations for Quantum Many-Body Systems and Creating a Provenance-Rich Publication from the Results](case-studies/jgukelberger.md)
 * [Validating Statistical Methods to Detect Data Fabrication](case-studies/chartgerink.md)
 * [Feature Extraction and Data Wrangling for Predictive Models of the Brain in Python](case-studies/choldgraf.md)
-* [Using Observational Data and Numerical Modeling to makeScientific Discoveries in Climate Science](case-studies/dholland.md)
+* [Using Observational Data and Numerical Modeling to Make Scientific Discoveries in Climate Science](case-studies/dholland.md)
 * [Analyzing Bat Distributions in a Human-Dominated Landscape with Autonomous Acoustic Detectors and Machine Learning Models](case-studies/jkitzes.md)
 * [An analysis of household location choice in major U.S. metropolitan areas using R](case-studies/akrause.md)
 * [Analyzing Cosponsorship Data to Detect Networking Patterns in Peruvian Legislators](case-studies/jmMagallanes.md)
