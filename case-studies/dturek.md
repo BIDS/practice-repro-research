@@ -38,27 +38,22 @@ The most notably reproducible aspect of this project is the public repo containi
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 In the context of my case study, reproducibility means that users / reviewers can re-create the results (improvements in MCMC efficiency) presented in our manuscript. However, the results will not match exactly due to small differences in algorithm runtime.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 Reproducibility is important so that others may verify the results given in our publication. This ensures that the results are genuine, and also gives a clear path forward for others to use our algorithm.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 Mostly through the use of GitHub, from colleagues at the University of California, Berkeley, and through general programming experience. No specific classes or workshops come to mind.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 In the area of computational statistics, there are not many barriers to reproducible research aside from ignorance or technical inability. However, this case study does highlight one genuine obstacle: that of performance differences between various machines and computing platforms, which will affect algorithm runtime, which factors into our measure of efficiency.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 Primarily so that others may actually (and easily) verify our results, if they so choose.

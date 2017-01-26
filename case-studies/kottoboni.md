@@ -42,27 +42,22 @@ RStudio and knitr were key for this workflow. This was my first time using knitr
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 I think that a data analysis project is reproducible if there are enough breadcrumbs (in the form of code and instructions) for anybody to recreate the analysis from start to finish. In another sense, a project is reproducible if someone can carry out a different analysis on the data and arrive at qualitatively similar conclusions.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 Researchers tend to blame the "reproducibility crisis" on statistics, and in particular p-values. It's our job as statisticians to fight this claim by making statistical analyses as correct and as transparent as possible, so people know exactly where their p-values are coming from.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 I learned some of these practices from other students in my department and the rest were self-taught using resources on the internet.
 
-Are there any best practices that you'd recommend for researchers in your field?
---------------------------------------------------------------------------------
+#### Are there any best practices that you'd recommend for researchers in your field?
 
 Explain every step in the data preprocessing and analysis carefully and thoroughly. Document and comment code liberally. Make code and data publicly available.
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 Hadley Wickham's *R Packages* book is an invaluable resource. He demystifies the R package and shows how to use RStudio to make the workflow smooth and efficient.

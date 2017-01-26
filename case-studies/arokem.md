@@ -44,8 +44,7 @@ A specific module (`osmosis.parallel`) was developed to deal with submission of 
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 Reproducibility is a matter of degree, not of kind. It usually depends on the availability of code and data from a scientific study, such that only a reasonable effort would be required to generate the evidence (numbers and visuals) used to support a scientific finding.
 
@@ -55,30 +54,25 @@ A higher standard, sometimes called 'replicability' would be to require that the
 
 Reproducibility does not guarantee replicability (Leek & Peng, 2015). Some may even argue that reproducibility and replicability may sometimes be in conflict, because implementation errors can be propagated in reproduction, but not in replication (Baggerly, Morris, Edmonson, & Coombes, 2005; R. D. Peng, 2009).
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 Human neuroscience is a field which is particularly likely to have an abundance of false findings (Ioannidis, 2005): Sample sizes are usually small, particularly in MRI, which is an expensive experimental technique. The standards of the field focus on statistical significance of effects, rather than effect sizes, which tend to be small. Though standards limiting the selection of tested relationships, and limiting the flexibility of experimental and analytic designs are starting to emerge, in practice these are not very strictly limited. Some of the aspects of the field that make it interesting and important, are also pernicious in this regard: the direct application to human health means that there is a perception of potential financial incentives. Finally, it is a burgeoning field, with many groups working on similar questions. Higher standards of reproducibility in this case would mean less false findings, because at least some of these factors would be ameliorated by a full "chain of evidence" to support every finding.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 Many of these practices evolved out of laziness. Early on in grad school, I learned that most analyses that are done once eventually need to be redone, and that ultimately I would have to do less work, not more, if I had a script that generated all my figures for every study that I was doing. This also evolved from being rather bad at taking notes about the work I was doing in the lab. I would need programs, and eventually IPython notebooks, just to remember what I did to get from the data to the conclusions.
 
 A huge impact was the mentorship I got from Fernando Perez during graduate school. He was not shy about how little of the research in our field he believed to be true, and this skepticism inspired me to struggle to be more confident in my own research conclusions.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 There are several barriers to wider adoption of reproducible research practices in human neuroscience. The first is that there is very little practical cost to not being reproducible. As mentioned above, there is likely to be a large proportion of false results in the neuroscience literature, and it's more likely to be false if it's not reproducible. Since a false positive result is more likely to result in a publishable unit, there seem to be incentives in place to not be reproducible, slowing down the progress of the entire field.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 The level of confidence that I have in my results is quite high. That helps me sleep well at night.
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 There are several papers that provide guidelines for reproducibility with a specific focus on neuroimaging. Two recent examples include Gorgoloewksi & Poldrack (2016) and Pernet & Poline (2015).
 

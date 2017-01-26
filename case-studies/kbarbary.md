@@ -32,8 +32,7 @@ The separation of common software functionality into a *library* is surprisingly
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 To me, reproducibility has two facets: the availability of usable software (preferably under an open-source license), and the availability of data (preferably in both raw and reduced forms). Together, these should give an outsider the ability to reproduce the results of a study from start to finish.
 
@@ -41,8 +40,7 @@ I separate these two aspects because each can be beneficial without the other. F
 
 As a side note, in my domain we often settle for a weaker form of full reproducibility, where a "reduced" data product and the software to analyze it is released, but not the raw data and not the software to go from raw to reduced data.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 Efficiency. Reproducibility makes cosmology research more efficient in the following ways:
 
@@ -52,13 +50,11 @@ Efficiency. Reproducibility makes cosmology research more efficient in the follo
 
 -   Fewer unexplained conflicting results. Research is often held up or lead down the wrong track by conflicting results from multiple groups. Allowing different groups to reproduce each other's results will help resolve such situations more quickly.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 Mainly through working on the AstroPy project, which develops a community astronomy Python package. I got involved in AstroPy when it was started in 2011. Like many other large open-source projects, AstroPy is developed on GitHub and follows typical best practices such as extensive unit testing, automated documentation builds and continuous integration on multiple platforms. In short, I learned these practices by interacting with more experienced programmers also working on the project.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 In astronomy, like other fields, observers have a desire to carefully guard their hard-won data until they have eeked out every possible analysis. I'm sympathetic to this; acquiring the data often requires designing, building and deploying a new instrument or even an entire telescope. It can be a very large fraction of the work that goes into a project. The threat that someone else will download your data and use it to publish a result that you could have published is very real.
 
@@ -74,8 +70,7 @@ Even for those who do wish to release their software under an open-source licens
 
 Finally, one technical issue with releasing data is data volume. Raw imaging data from an entire survey can be many terabytes. Making this data publicly available often requires dedicated servers and support staff.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 -   **Long term project efficiency:** Projects are often carried out over multiple generations of grad students and postdocs. Doing things reproducibly within a collaboration makes the transition between generations much less lossy.
 

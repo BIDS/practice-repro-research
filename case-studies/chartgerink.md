@@ -58,33 +58,27 @@ I use a set of tools which all have one thing in common: they are based on open 
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 For me, reproducibility pertains to the reliability of research findings, which both includes direct reproducibility (i.e., can someone else reproduce the results by applying the described method to the same data?) and retest reliability (i.e., if we rerun the study, do we get similar results?). My case study focuses on direct reproducibility, that is, that anyone or a future-me can retrace the steps from the project in such a way that it is understandable and that the results are reliable.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 Scientists are humans and humans make mistakes. By using reproducible practices, we can discover these mistakes and not be led down a research path that is based on a mistake. It is important in my domain, because we preach that science has to be conducted in a reproducible manner.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 I got interested in reproducible practices during my master education when my supervisor introduced me to the idea of Open Science. I found myself wondering how to implement it in different stages of the research process, not knowing where to start documenting *during* the research. I learned much from colleagues across the world and across fields with who I discussed ways to be more reproducible (mostly on Twitter, which is a highly valuable resource for researchers).
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Reproducible research is tiresome when you figure out a new way of doing things and then think that your previous work is incomplete. Additionally, not all colleagues are as enthousiastic about reproducibility and this can lead to discussions (also a good thing) that postpone implementing certain practices. It is very important to get everyone on the same page in the initial meeting on how the project will be managed, such that nobody is met with surprises and potential ambivalence at the end.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 The main incentive for reproducible research is (future) efficiency. When you know that you can revisit projects from years ago and need at most 30 minutes to find what you are looking for is a major improvement over spending a day looking for that one specific value someone asked about in your email. It also helps revisit previous projects and see what I did, because I frequently unlearn things I require in a new project (e.g., I often forget how to make plots in the `ggplot2` package because I use it too infrequently, and I just reuse code from previous projects).
 
-Are there any best practices that you'd recommend for researchers in your field?
---------------------------------------------------------------------------------
+#### Are there any best practices that you'd recommend for researchers in your field?
 
 The best practices I recommend any researcher to apply are the following:
 
@@ -96,8 +90,7 @@ The best practices I recommend any researcher to apply are the following:
 
 4.  Try and create an analysis script that can run automatically, downloading all required files and installing its dependencies. Otherwise, other people are likely to fail in reproducing your results, when they cannot get to the dependencies.
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 I recommend the article by Karthik Ram on using version control in research. It opened my eyes on the use of version control as a project management tool that improves reproducibility at the lowest cost possible. Low threshold version control is available at the OSF, which provides online training tools (see osf.io).
 

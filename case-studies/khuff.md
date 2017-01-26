@@ -86,28 +86,23 @@ The continuous integration system, though difficult to implement due to build is
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 A reproducible research product is one that has been sufficiently documented, well-constructed, and preserved for its results to be recreated by some external researcher or group.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 My domain, nuclear engineering, is one where precision and accuracy are both of utmost importance to both human and environmental outcomes. Any conclusions drawn by science can only make an impact in the real world if they can meet the standards set out by the Nuclear Regulatory Commission. For this, reproducibility is paramount.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 I learned these practices primarily from my advisor, Paul P.H. Wilson at the University of Wisconsin, Madison. I also learned from colleagues in The Hacker Within, the Scientific Python community, and Software Carpentry.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 One major problem is export control. Making software and data open source is restricted by the US Department of Energy, in some cases.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 -   **Fear.** The fear of retractions due to faulty software or data can be reduced by enforcing transparent reproducible practices, which tend to reduce the likelihood of being accused of scientific fraud.
 

@@ -60,23 +60,19 @@ While R by itself ('base' R, without contributed packages) is familiar to many s
 
 ### Questions
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 Reproducibility is important because many important steps in our data analysis occur on the researchers' computers, but these steps are often not documented in a way that we can easily access, archive, and communicate with others. The use of software operated by a point-and-click interface is the key problem here. By changing the key analytical tool to a scripting language such as R, we change the nature of our computational work from closed and ephemeral, to open, reusable, and enduring. This makes it a lot easier to show what we've done, why we think the results we present are correct, and enable us and others to reuse and extend our work. These are fundamental for the advancement of science, and with improved reproducibility in our research, we can advance science faster and more reliably.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 Most of the reproducible practices in our project were self-taught by a few members in our team adopting practices they've observed in elsewhere, such as ecology and biology. Key resources in this self-teaching include Software Carpentry teaching materials, materials produced by rOpenSci, and instructive scholarly publications and blog posts with code examples, and GitHub repositories written by researchers in other fields who are highly progressive in enabling reproducible research. These include Carl Boettiger, Jenny Bryan, Rich FitzJohn, Karl Broman, and others in the rOpenSci community. Many of the idioms that greatly simplify using R for archaeological data analysis have been contributed by Hadley Wickham and his collaborators on the 'tidyverse' set of packages. The R community on [StackOverflow](http://stackoverflow.com/questions/tagged/r) is a great resource because of their strong emphasis on including reproducible examples in questions posted to the site. Many of the questions and problems I encounter have already been answered in several different ways on StackOverflow, often by highly skilled programmers.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 In my field, where the datasets are usually not problematically large and compute times are not inconveniently long, I consider that most of the technology barriers are sufficiently low to be considered solved. The tools are stable, well-documented, and widely used in other domains, so I don't see any major technical challenges. The key challenge is human - not everyone in the team has the skills to use the tools that enable reproducible research, and not everyone has the motivation and opportunity to learn. This contributes to the primary logistical challenge, which is the manual integration of project components using traditional low-reproducibility tools and the components that enable high-reproducibility. My suggestions are to ride the wave of generational change, and teach students and early career researchers about reproducible research as a normal part of doing research. This means teaching them to expect that analyses should be done with a scripting language (rather than point and click), and that code and data from other researchers should be openly available for inspection (rather then 'by request', which when requests are made, are often refused or ignored). This is the long game, waiting for generational change, but I think will be more effective than efforts full of sound and fury to change the entrenched behaviours of senior colleagues, who rarely have the time or inclination to learn new tools and workflows.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 The major incentives are:
 
@@ -86,8 +82,7 @@ The major incentives are:
 
 -   increasing the impact of our work by increasing the ability of, and likelihood that, other researchers will use our methods, data and results.
 
-Are there any best practices that you'd recommend for researchers in your field?
---------------------------------------------------------------------------------
+#### Are there any best practices that you'd recommend for researchers in your field?
 
 The generic practices I'd recommend for researchers in my field include:
 
@@ -97,8 +92,7 @@ The generic practices I'd recommend for researchers in my field include:
 
 -   making the scripts openly available in trustworthy repositories so that they can be used with the data to generate the figures and statistical results in the publication.
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 -   Stodden, V and Miguez, S (2014). Best Practices for Computational Science: Software Infrastructure and Environments for Reproducible and Extensible Research. Journal of Open Research Software 2(1):e21, DOI: <http://dx.doi.org/10.5334/jors.ay>
 
@@ -112,8 +106,7 @@ Would you recommend any specific resources for learning more about reproducibili
 
 -   [rOpenSci Reproducible Science Guide](http://ropensci.github.io/reproducibility-guide/) (and see the *further readings*)
 
-References cited
-----------------
+#### References cited
 
 Clarkson, C., Mike Smith, Ben Marwick, Richard Fullagar, Lynley A. Wallis, Patrick Faulkner, Tiina Manne, Elspeth Hayes, Richard G. Roberts, Zenobia Jacobs, Xavier Carah, Kelsey M. Lowe, Jacqueline Matthews, S. Anna Florin 2015 The archaeology, chronology and stratigraphy of Madjedbebe (Malakunanja II): A site in northern Australia with early occupation. *Journal of Human Evolution* Volume 83, June 2015, Pages 46–64 DOI: <http://dx.doi.org/10.1016/j.jhevol.2015.03.014>
 

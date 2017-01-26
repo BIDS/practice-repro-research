@@ -31,8 +31,7 @@ Some authors teased out quite a bit of the subtlety embedded in this semantic qu
 
 Most authors, however, expressed some flavor of either computational reproduciblity or replicability.
 
-Computational Reproducibility
------------------------------
+#### Computational Reproducibility
 
 There was general agreement among most authors about at least one aspect of what reproducibility means: that when provided with identical source code, input data, software, and computing environment configurations, that an independent party can exactly reproduce the results of the original work -- especially published results. This is described in our glossary as *computational reproducibility*.
 
@@ -72,8 +71,7 @@ The importance of this sustainable, extensible kind of reproducibility was noted
 
 > To me, reproducibility has two facets: the availability of usable software (preferably under an open-source license), and the availability of data (preferably in both raw and reduced forms). Together, these should give an outsider the ability to reproduce the results of a study from start to finish. I separate these two aspects because each can be beneficial without the other. For example, even without releasing data, it can still be quite beneficial to release software. If released under an open-source licence, this provides a different flavor of reproducibility - the ability to reproduce an algorithm described in a paper and use and improve that algorithm in subsequent work.
 
-Replicability
--------------
+#### Replicability
 
 When the final conclusions can be confirmed based on a different experiment, scientists consider this validation of the result. In this vein, Valentina Staneva distinguishes between exact and approximate reproducibility:
 
@@ -91,8 +89,7 @@ Validation of a scientific result is achieved in this way when one can repeat th
 
 We also asked the case study authors which features of their workflows presented challenges to reproducibility. Irrespective of the type of reproducibility being sought, we hoped that these pain points would reveal areas of particular need - workflow bottlenecks where innovation might improve the experience of reproducible science. The following sections highlight some of these frustrating, time consuming, opaque, or fragile obstacles and mentions when they may represent high priority needs for better tools and improved strategies.
 
-People and Skills
------------------
+#### People and Skills
 
 Research teams are diverse. Computational skills especially vary dramatically from one researcher to another even within the same lab. The blinding pace of innovation in software tools means that even well-prepared collaborators can't expect to always keep up with the newest tools. Manuscript preparation software, database formats, and version control systems used by one scientist may be equally modern but nonetheless incompatible with the software stack familiar to their collaborators.
 
@@ -109,8 +106,7 @@ difficulty of communication with and understanding from their peers. The ethical
 
 **Need:** Widely used tools should be more reproducible so that the common denominator tool does not undermine reproducibility.
 
-Dependencies, Build Systems, and Packaging
-------------------------------------------
+#### Dependencies, Build Systems, and Packaging
 
 Just as scientists "stand on the shoulders of giants," our software perches upon forests of dependency trees. A single step in our workflow may rely on dozens of libraries and scientific software packages which may each, in turn, rely on many other libraries and packages.
 
@@ -126,8 +122,7 @@ It's now thirty years after the invention of autotools, but cross platform confi
 
 **Need:** Improved configuration and build systems for portably packaging software, data, and analysis workflows.
 
-Hardware Access
----------------
+#### Hardware Access
 
 The build system situation is a special small-scale case of a larger problem of variable hardware access. At that end of the spectrum, there are challenges getting a workflow running on your collaborator's laptop in addition to your own. At the other extreme is access to high performance computing hardware or unique experimental devices.
 
@@ -139,8 +134,7 @@ This hardware access issue was noted at the data collection step in the case stu
 
 **Need:** Standardized hardware configurations and experimental procedures for limited-availability experimental apparatuses.
 
-Testing
--------
+#### Testing
 
 Many case study authors who developed code beyond simple scripts discussed testing that code systematically. This practice, in addition to being hygenic and improving robustness, is a type of self-check on reproducibility. Software tests and continuous integration in particular allow software authors to automate frequent checking that code consistently performs as expected even as new features are added.
 
@@ -156,8 +150,7 @@ Of course this is not a statistically significant sample, so conclusions about t
 
 **Need:** Norms encouraging greater adoption of unit testing irrespective of programming language.
 
-Publishing
-----------
+#### Publishing
 
 The most universally shared step in the research process is publication. In a literate programming sense, papers can be integrally automated and "runnable." For the majority of the case studies, however, the production of the research paper capturing the work was reported to be somewhat independent of the science. In other cases a more literate programming method was adopted through the use of Jupyter notebooks or judicious use of rmarkdown.
 
@@ -173,8 +166,7 @@ A reproducible paper is a large and varied task, perhaps demanding its own separ
 
 **Need:** Broader community adoption around publication formats that allow parallel editing (i.e. any plain text markup language that can be version-controlled in a distributed manner.). Tools such as Overleaf and SageMathCloud are a beginning toward making LaTeX more approachable, but greater adoption is needed.
 
-Data Versioning
----------------
+#### Data Versioning
 
 Mere data storage is not always sufficient for the purpose of reproducibility. Occasionally, data may need to be versioned so that changes can be tracked, evaluation and cleaning steps can be rewound, and work can be extended.
 
@@ -184,8 +176,7 @@ Tools being developed to streamline the process of data versioning include GitHu
 
 **Need:** Greater scientific adoption of new industry-led tools and platforms for data storage, versioning, and management.
 
-Time and Incentives
--------------------
+#### Time and Incentives
 
 Perhaps the most vexing impediment to reproducibility the case study authors and their collaborators suffered from was a lack of time, incentives, or both.
 
@@ -199,8 +190,7 @@ But, while the promotion and tenure process is in need of modernization, funds-g
 
 **Need:** Incentive systems where reproducibility is not only self-incentivizing.
 
-Data restrictions
------------------
+#### Data restrictions
 
 In the same way that transparent analysis is core to reproducing scientific work, access to raw data can also be essential for reproducibility. Indeed, it can be necessary for confirming conclusions during review and exploring alternative methods during extension by other scientists. In some fields, however, data access is legally restricted. Some such data restrictions concern human subjects research, such as survey and private medical data. Some restrictions concern national security, such as the restriction of export controlled nuclear data or risk map data. Researchers in these fields are therefore limited in their ability to do completely open science, but can often, behind the export control or IRB wall, share analysis methods with colleagues who do have access to the data.
 
@@ -248,34 +238,29 @@ Nearly all reported use of GitHub-based version controlled repositories at the c
 
 ![A summary of tools mentioned more than once by the case study authors.](5-fig-2.png)
 
-Publishing
-----------
+#### Publishing
 
 For publishing, the case study authors improved their reproducibility with What You See Is What You Mean (WYSIWYM) mark-up languages. Some preferred LaTeX/Overleaf, while others preferred the R/Knitr/RMarkdown/Sweave ecosystem. In combination with a text editor and distributed version control, both reproducibility and simultaneous collaboration are improved by these plain text mark-up languages.
 
-Data Handling
--------------
+#### Data Handling
 
 The scientists used many different formats and systems for storing and cleaning their data. Some storage systems include both hierarchical (e.g. HDF5) and relational (e.g. SQL) database systems. Of particular note, the R community representation among these case studies boasted use of the RStudio IDE as part of the way they streamline access to the collection of R tools which enable some of these data repository solutions as well as data cleaning and exploration tasks.
 
 Additionally, emerging \`\`data lakes'' for archived storage and retrieval such as Dataverse (King, 2007) were also mentioned. Case study authors even noted that specialized data lakes exist for certain scientific domains. Neurovault (Gorgolewski et al., 2016) was mentioned for neuroscience, but similar solutions exist other fields as well (e.g. Dryad (H. C. White, Carrier, Thompson, Greenberg, & Scherle, 2008) for ecology).
 
-Testing Frameworks
-------------------
+#### Testing Frameworks
 
 In the Python ecosystem, tests can be run with frameworks such as [nose](https://nose.readthedocs.org/en/latest/) or [unittest](https://docs.python.org/3/library/unittest.html). In C++, one can use [Googletest](https://code.google.com/p/googletest/). In both Python and C++ projects, testing frameworks were mentioned by multiple case study authors.
 
 Although very few R users mentioned unit testing their code, the language does have options for unit test frameworks, with the testthat package (Wickham, 2011) being the most widely-used unit testing framework. Other available packages exist as well, such as the RUnit package.
 
-Continuous Integration
-----------------------
+#### Continuous Integration
 
 Although few of the case study authors mentioned continuous integration, its use was lauded as essential. Reproducible practices are easiest to adopt when they require no time from the scientist. Even better, practices that save time are even easier to adopt. Continuous integration is just such a practice.
 
 To get scientists to regularly run the tests for their software on a variety of platforms, don't require any effort of the scientist. That is, outsource the task of building and running the tests to the computer with a continuous integration system. Essential to production software, continuous integration servers like [CTest](https://cmake.org/Wiki/CMake/Testing_With_CTest), [Travis-CI](https://github.com/travis-ci/travis-api), [Jenkins](https://jenkins.io/), [Batlab](https://batlab.org/), and many others enable scientists to focus on implementation without worrying about checking constantly whether they're introducing bugs. If they introduce a bug, the continuous integration server will notice and send out and email or publish a status report.
 
-DOI Management
---------------
+#### DOI Management
 
 A primary incentive for scientists is citation. Accordingly, the efforts they put toward reusable workflows will only seem worthwhile if those data, scripts, libraries, and analyses can be cited. Thus arises the DOI. Many methods exist for putting a citeable, persistent, digital stamp on one's code and data.\
 Common services for archiving digital objects and providing DOIs were mentioned in the case studies including Zenodo, Figshare, and the Open Science Framework.
@@ -284,8 +269,7 @@ Common services for archiving digital objects and providing DOIs were mentioned 
 
 Perhaps most interesting among all of the recommendations are some insights that were only noted by one or two of the scientists. Some of these recommendations may be impactful if they see broader adoption.
 
-Post Flurry Refactoring
------------------------
+#### Post Flurry Refactoring
 
 Chapter authors Randall LeVeque and Rachel Slaybaugh each expressed their own version of the following idea:
 
@@ -295,8 +279,7 @@ This kind of workflow doubles down on the importance of documentation and clarit
 
 This workflow concept is especially enamoring because it recognizes the humanity of the scientist, who in a day-to-day work environment may let a few tasks necessary for full reproducibility to slip through the cracks. It then corrects for that element of human frailty by budgeting time at the wrapping-up stages to correct for that human error and solidify the process, like a time capsule for the future.
 
-Standardized Data Formats
--------------------------
+#### Standardized Data Formats
 
 In the case studies, it was mentioned that a GIS standard is needed to help unify work with maps and geospatial data. This unification of work through collectively adopted standards applies to other fields as well. When a proliferation of standards complicates collaboration within a scientific domain, community agreement on a single standard can allow reproducibility across research groups.
 

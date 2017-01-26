@@ -36,8 +36,7 @@ b.  Automated Stages:
 
     6.  Provide external user interface.
 
-A. Manual Stages
-----------------
+#### A. Manual Stages
 
 a1. **Defining the research problem.** There was an interest in the political science community in Peru to learn more on the dynamics of their National Congress. There were some particular facts that had been discussed in academia and in the media that called our attention:
 
@@ -73,8 +72,7 @@ a3. **Review of the literature**. This step allowed me to identify similar cases
 
 a4. **Write the paper**. As expected, this was a manual step. However, as I describe later, this was supported by different tools. As usual, this step was repeated many times. I was the only contributor.
 
-B. Automated Stages
--------------------
+#### B. Automated Stages
 
 b1. **Collect Data**. Data collection had two main sources:
 
@@ -114,8 +112,7 @@ b6. **Provide external user interface**. It was clear during the planing stages 
 
 This process was done entirely by me. However, the drafts were shared when most of the processing was finished. This was a continuous process as the paper was written. The selected users created ShareLaTeX accounts to see the LaTeX generated pdf version of my document. I allowed them to write comments in the LaTeX document using ShareLaTeX itself.
 
-C. On the Data, Software and Processing
----------------------------------------
+#### C. On the Data, Software and Processing
 
 -   **Data:** The raw data as well as the cleaned and aggregated data are online, in a private GitHub repo. The data can be share upon request and instructions are included on how to cite it. The data files have a table-like structure to be easily read into R, but other versions were produced in xml-like format as I thought I may need to use other network visualization programs like Gephi.
 
@@ -155,27 +152,22 @@ LaTeX was a key component in all this research and its reproducibility level. It
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 In general, I consider this term means the level of reconstruction of a research that can be achieved by a person foreign to the researcher / research team via the code and data available in some repository. For me, reproducibility is not only that the foreign person can decompress and run and executable file to see the results, but be able to audit the whole process. The less feedback required by the auditor, the more reproducible a work is.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 Because computational social science is still young in many other countries. As in my case, data is just starting to become available, so following, and teaching, the reproducibility approach will benefit the research quality. In public policy, particularly, it will enable stakeholders participation in knowledge creation.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 I had no chance to have mentor or courses on this. I just felt the need to organize my work as many tools and data were available for my case. I was afraid that if I did not follow this approach I could easily get lost. Reproducibility demands good research planing, and it pays off.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 If the data you are using is public, I see *less* problem. When the data is not, and you get access with a special permission, legal issues are always present. As for investment, my particular collection of tools are free, so it should not be a problem, unless your funding institution forces you to use particular tools. I also believe that this approach can be very challenging for older generations not used to this. I see less of a problem in younger generations of researchers.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 That it allows you to improve your work.

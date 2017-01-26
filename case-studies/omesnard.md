@@ -12,7 +12,7 @@ We are members of a computational research group led by Prof. [Lorena Barba](htt
 
 The first code we used to attempt replication is IcoFOAM: the unsteady laminar solver of the well-known CFD package [OpenFOAM](http://www.openfoam.org/). We chose OpenFOAM because it is widely used, open-source, and documented: both code documentation and users' guide are available. With unstructured-mesh finite-volume solvers like IcoFOAM, the mesh generation step is most often what determines the quality of the solution, and we experienced that some meshes resulted in unphysical results. Our first tries led to inconsistent results and we had to replace the mesh-generation tool to get acceptable mesh quality. Setting the boundary condition at the domain outlet was particularly problematic, and made more difficult by lack of documentation for the type of boundary condition we needed. We invested several months of persistent efforts before finally replicating our previous findings (in terms of the lift characteristics) with IcoFOAM.
 
-We then used [IBAMR](https://github.com/ibamr/ibamr), an open-source software available on GitHub that implements a different immersed-boundary method than cuIBM. Bhalla et al. (2013) published a detailed validation of the software, and various examples are included in the code repository. After many failed attempts, we found that we had to force the fluid to rest everywhere *inside* the immersed-body, not just at the boundary—this is not an intuitive option with immersed-boundary methods. In the end, we can say that the *scientific findings* of Krishnan et al. (2014) have been replicated, but we still see noticeable differences in the details of the flow characteristics.
+We then used [IBAMR](https://github.com/ibamr/ibamr), an open-source library hosted on GitHub that provides several numerical methods for immersed bodies. One of them is specifically designed for non-deforming bodies, which is our situation. Bhalla et al. (2013) published a detailed validation of this method, and some examples are included in the code repository. After many failed attempts, we found that this method requires forcing the fluid to rest everywhere *inside* the immersed-body, not just at the boundary—this is not an intuitive option with immersed-boundary methods. In the end, we can say that the *scientific findings* of Krishnan et al. (2014) have been replicated, but we still see noticeable differences in the details of the flow characteristics.
 
 The [cuIBM](https://github.com/barbagroup/cuIBM) and [PetIBM](https://github.com/barbagroup/PetIBM) codes are both being developed in our research lab and implement the same immersed-boundary method (Taira & Colonius, 2007). The GitHub code repositories include code documentation with [Doxygen](http://www.doxygen.org), users' documentation (on the GitHub wiki), as well as basic examples and tutorials. cuIBM uses [CUSP](https://github.com/cusplibrary/cusplibrary), an open-source library for sparse linear algebra on a single CUDA-architecture Graphical Processing Unit (GPU). We used cuIBM again to confirm the reproducibility of the published findings in Krishnan et al. (2014). It is important to remark that we had to use the *same version* of the code, with the *same version* of the linear-algebra library to obtain the same numeric answers as before. In fact, our first attempts used a newer version of the CUSP library, and failed to replicate the findings! In PetIBM, we use the [PETSc](http://www.mcs.anl.gov/petsc/) library to solve the linear systems on a distributed-memory machine. Even though the mathematical formulation in cuIBM and PetIBM is exactly the same, we observed that a different linear-algebra library could change the results. As of this writing, we have been unable to replicate with PetIBM the lift-enhancement feature of the flying snake.
 
@@ -34,8 +34,7 @@ We use the version-control hosting platform GitHub to support our reproducible w
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 The starting point for our understanding of reproducibility is contained in the pledge "Reproducibility PI Manifesto" (Barba, 2012) which includes these steps:
 
@@ -57,33 +56,27 @@ The starting point for our understanding of reproducibility is contained in the 
 
 Some of these items have to do with making our research materials and methods open access and discoverable. The core of this pledge is releasing the code, the data, and the analysis/visualization scripts. Already this can be time consuming and demanding. Yet, we have come to consider these steps the most basic level of reproducible research. On undertaking a full replication study of a previous publication by our research group, we came to realize how much more rigor is required to achieve this, in the context of computational fluid dynamics of unsteady flows. We use the term "full replication" in the sense presented by Peng (2011), that is, completing an independent study using new methods to collect new data, arriving in the end at the same scientific findings. In computational fluid dynamics, full replication of the findings can involve using a different code that implements the same numerical method, or a code that implements a different numerical method altogether but solves the same mathematical model. Because we are solving the Navier-Stokes equations—an unsteady and nonlinear model—certain problem scenarios can present particular challenges to replication.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 In computational science, we use simulations and data analysis as tools for the creation and justification of scientific knowledge. This process of knowledge creation, as in all science, must also produce evidence to justify itself. Reproducibility is a way to provide grounds for trusting the scientific findings obtained computationally. Ensuring that a publication (along with the data used to generate the figures) is reproducible makes it easier for others to corroborate (or reject) a scientific hypothesis. Codes and data used to publish results should be version-controlled and open-source to facilitate reproducibility. Donoho and co-authors (2009) mentioned that we develop codes so that they can be used again by strangers and defined strangers as "anyone who doesn't possess our current short-term memory" (including ourselves in some years). We believe that reproducible research can also prevent scientists from "reinventing the wheel" by having to re-create complete software stacks to build from previously published work.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 The group's PI, Prof. Lorena Barba, plays an active role in raising awareness about reproducible research. Incoming students joining our research lab must start by learning the different tools mentioned in the "Reproducibility PI Manifesto". The [Software Carpentry Foundation](http://software-carpentry.org/) (through workshops and online ressources) also contributes to educate our group members and improve our workflow to achieve reproducible research.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Reproducible research can be time-consuming, requiring rigorous methods and organization. At various moments during the project, we had to pause and ask ourself if our research was currently reproducible. Often, this was prompted by a conversation or questioning during group meetings. In that sense, a strong collaborative culture in the research group, and beyond in the wider community of the discipline, are vital to instill reproducibility practices in computational researchers. Lack of systematic and widespread educational programs that emphasize reproducible research is a serious obstacle.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 Making your research more reproducible—e.g., providing reproducibility packages along with the manuscript—is a way of showcasing your skills, a medium for communicating research more transparently, and an invitation to give feedback on your work. If the research community is inclined to put more effort in doing reproducible research, it would prevent scientists from reinventing the wheel by rewriting software in order to build from your work. In the long run, it saves resources to achive scientific knowledge growth, both at the level of a community and within a research group.
 
-Are there any best practices that you'd recommend for researchers in your field?
---------------------------------------------------------------------------------
+#### Are there any best practices that you'd recommend for researchers in your field?
 
 Again, we insist that automating all the computational workflow and diligently maintaining a lab notebook are fundamental to record your research. We try to avoid GUIs as much as possible and prefer to script everything so that analysis can be automated, reproducible, and recorded. This may be time-consuming but surely beneficial in the longer term of a research project.
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 -   Barba, L. A. (13 December 2012). "Reproducibility PI Manifesto", 10.6084/m9.figshare.104539. Presentation for a talk given at the ICERM workshop "Reproducibility in Computational and Experimental Mathematics". Published on figshare under CC-BY.
 

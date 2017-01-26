@@ -4,7 +4,7 @@ Developing and Testing Stochastic Filtering Methods for Tracking Objects in Vide
 Valentina Staneva
 -----------------
 
-My name is Valentina Staneva and I work as a data scientist at the eScience Institute at University of Washington. I am an applied mathematician who develops methods to extract information from diverse datasets. Most of my experience is in the domain of image processing and its biomedical applications. This case study describes the workflow of a particular project whose goal was to develop and test new algorithms for tracking objects in videos which aim to preserve the original structure of the objects. This research was done while I was a graduate student at the Center for Imaging Science, at Johns Hopkins University, and was motivated by the task of tracking heart motion in cardiac images. I believe it reflects a typical experience of an applied mathematicians working on biomedical imaging problems.
+My name is Valentina Staneva and I work as a data scientist at the eScience Institute at University of Washington. I am an applied mathematician who develops methods to extract information from diverse datasets. Most of my experience is in the domain of image processing and its biomedical applications. This case study describes the workflow of a particular project whose goal was to develop and test new algorithms for tracking objects in videos which aim to preserve the original structure of the objects. This research was done while I was a graduate student at the Center for Imaging Science, at Johns Hopkins University, and was motivated by the task of tracking heart motion in cardiac images. I believe it reflects a typical experience of an applied mathematician working on biomedical imaging problems.
 
 ### Workflow
 
@@ -18,7 +18,7 @@ My name is Valentina Staneva and I work as a data scientist at the eScience Inst
 
 This results in exploring quite a lot of different setups and most of the research time is spent at this stage (it can take from weeks to several months to implement and test a specific formulation). The work was performed on an account on a university server, which was sequentially backed up. I also used Subversion for version control and stored my files in a Dropbox folder (which has its own version control). Luckily, I never lost a file, even when our server got hacked.
 
-In general the evaluation of these algorithms on real data is difficult. There are no standard testing datasets, and it is hard to design ones as different image sequences describe different processes, and some algorithms perform well in some situations and poorly in other. One usually considers a range of typical tracking hurdles and checks whether a given algorithm can overcome them. Since there is no one final metric to submit this requires storing all the results from all the experiments. In the end I saved all the code (written in MATLAB), data, and experiments in a folder, which provides everything necessary to regenerate the results in our manuscript with a few simple commands. When reviewers requested an additional plot to be included in our article, I could easily obtain it from the original data. We also selected a journal which does not prevent us from posting the preprint of the article elsewhere and stored all the supplementary materials on GitHub.
+In general the evaluation of these algorithms on real data is difficult. There are no standard testing datasets, and it is hard to design ones as different image sequences describe different processes, and some algorithms perform well in some situations and poorly in others. One usually considers a range of typical tracking hurdles and checks whether a given algorithm can overcome them. Since there is no one final metric to submit this requires storing all the results from all the experiments. In the end I saved all the code (written in MATLAB), data, and experiments in a folder, which provides everything necessary to regenerate the results in our manuscript with a few simple commands. When reviewers requested an additional plot to be included in our article, I could easily obtain it from the original data. We also selected a journal which does not prevent us from posting the preprint of the article elsewhere and stored all the supplementary materials on GitHub.
 
 The workflow also contains a parallel path in which one studies the mathematical properties of the models and algorithms. For example, we aimed to develop algorithms which preserve the topology of the tracked objects, and we proved that our framework ensures that, thus eliminating the need to test this property in multiple cases. Sometimes it is possible to guarantee the performance of algorithms even without implementing them, which makes reproducibility of mathematical research quite easy!
 
@@ -40,8 +40,7 @@ Our approach of encoding certain mathematical properties into the developed algo
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 "Reproducibility" has two meanings for me:
 
@@ -51,8 +50,7 @@ What does "reproducibility" mean to you?
 
 This case study directly addresses the first type of reproducibility, but it explores also a bit of the second interpretation.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 I find two main reasons for the importance of reproducibility in my domain:
 
@@ -60,28 +58,23 @@ I find two main reasons for the importance of reproducibility in my domain:
 
 -   Public: there is overabundance of algorithms and studies but it is hard to use them in practice, because there is no simple way to reproduce the results (one usually needs to reimplement the algorithms or redo the studies). So if one wants their research to be useful outside their own group, they should first ensure it is reproducible.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 I have been learning by myself. I believe some short reproducibility workshops would have improved my experience substantially (for example, learning about git/GitHub, virtual environments and light virtual containers).
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Working with biomedical data one often faces privacy and storage challenges. Another problem which I did not encounter but I know is persistent in the field is the use of too many external software packages to preprocess the data: some of them are supported only by specific operating systems, or require manual operation. This makes it challenging to automate the workflow. In an attempt to improve performance on large datasets, researchers often use elaborate C++ programs which are hard to interpret and extend.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 I think the incentives should be personal and based on the understanding that this would improve the workflow and this is how research should be done. Unfortunately, the time and efforts spent on creating reproducible research are not very well awarded.
 
-Are there any best practices that you'd recommend for researchers in your field?
---------------------------------------------------------------------------------
+#### Are there any best practices that you'd recommend for researchers in your field?
 
 Be reproducible every day! It is much easier to perform reproducible research than making your research reproducible (after it was already performed).
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 Some useful resources have been compiled by the eScience Reproducibility working group: <http://uwescience.github.io/reproducible/>
 

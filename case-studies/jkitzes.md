@@ -34,27 +34,22 @@ Ironically, of course, in creating a tool for non-programmers, I also created an
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 I consider a study to be (computationally) reproducible when I can send a colleague a zip file containing my raw data and code and he or she can push a single button to create all of the results, tables, and figures in my analysis. It can, of course, be quite challenging to achieve this goal with anything short of the simplest scientific workflows.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 I think that reproducibility is particularly important in fields like ecology in which researchers are constantly striving to make increasingly detailed inference and predictions using relatively scarce data. Although I do not have evidence to this effect, it seems logical to me that in these "high leverage" types of analyses, small analytical decisions (how data are cleaned, the options passed to optimizers, etc.) could play a disproportionate role in influencing the eventual study conclusions, and thus need to be fully documented and shared. An easy way to guarantee that all of these decisions are recorded is to make one's entire analysis reproducible by others. More broadly, I feel strongly that reproducibility is a basic component of good science. Now that "doing science" requires communicating more detail than can be easily expressed in narrative form in a manuscript, releasing code and data seems completely necessary, where feasible, across all domains.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 I started learning these tools through workshops, in particular Josh Bloom's Python bootcamp at UC Berkeley and by teaching Software Carpentry bootcamps with other experienced instructors. I also learned a great deal by working closely with Chloe Lewis, a former student in my Ph.D. lab who had previously worked at Microsoft, on the development of our software package *macroeco*, which I continue to maintain. I picked up more advanced techniques and ideas mostly through web searches while attempting to get unstuck from issues that arose in my own research and software development.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 A major challenge in ecology continues to be data sharing and access. Many field ecologists, understandably, are reluctant to share their hard-won raw data with other researchers. I suspect that this caution arises both from a sense of professional necessity (i.e., I invested a ton of time collecting this data and I am going to be the one to publish all of the analyses using it) and from the feeling that the numbers alone cannot possibly capture all the subtle nuances they observed in the field that are important to truly understanding the data, its potential, and its limitations. In particular, information about sampling bias (as derived from choices of study site, sampling techniques, season, missing data, and many other factors) cannot easily be described in numeric form. I also suspect that many field ecologists recognize that this information isn't even in the manuscript in narrative form, leaving the person who collected the data is the only one qualified to analyze it. What data is published and available tends to be relatively small and of heterogeneous format, and thus tends to be locked up in printed pdf tables and other non-machine-readable formats.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 I'm not sure that there are any major external incentives in my field -- certainly, in principle, releasing reproducible research could increase the number of researchers who end up citing your manuscript, but this seems somewhat indirect. Some journals, like PLoS, are now mandating that all novel computer code be uploaded as manuscript supporting information, but it seems that this requirement is not thoroughly checked at this point.

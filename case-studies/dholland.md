@@ -1,8 +1,8 @@
 Using Observational Data and Numerical Modeling to make Scientific Discoveries in Climate Science
 =================================================================================================
 
-David Holland
--------------
+David Holland and Denise Holland
+--------------------------------
 
 My name is David Holland. I am a Professor of Mathematics and Atmosphere Ocean Science at New York University's Courant Institute. I study global sea level rise in a changing climate, specifically, how changes in global weather patterns affect the melting of the great ice sheets.
 
@@ -64,8 +64,7 @@ We have nothing special to report here but are aware of efforts in the computer 
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 "Reproducibility" for me means that someone, anyone, could read my published research, then take the datasets I have archived on the web and use them to reproduce the results I had in my published paper.
 

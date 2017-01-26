@@ -8,17 +8,15 @@ Like other technical areas, the topic of computational reproducibility has its o
 
 ### Key Concepts
 
-Scientific Experiment
----------------------
+#### Scientific Experiment
 
 A **scientific experiment**, or simply **experiment**, is a procedure carried out to validate or refute a hypothesis. In our modern times, many stages in a research project are done partially or entirely through the use of computer programs and processes, and that involve digital data that is consumed (**input data**) and produced (**output data**). This may include studies in which the experiments themselves are computational in nature. In this case, the experiment is often modelled as a **pipeline** (or **dataflow**): a sequence of *steps* that are connected by the flow of data, where the output data of a step is used as input data for the following step. A step can be represented by a computer program or a sequence of programs (a sub-pipeline), and it transforms the data it consumes as part of the procedure.
 
-Reproducibility
----------------
+#### Reproducibility
 
 **Reproducibility** is a cornerstone of science. Definitions vary greatly across scientific disciplines, but the meaning that we find most prevalent is the 'calculation of quantitative scientific results by independent scientists using the original datasets and methods' (Stodden, Leisch, & Peng, 2014). The goals of reproducibility go beyond duplicating someone else’s investigation: it also entails having reproducibility for yourself, defeating self-deception in scientific results (Ioannidis, 2005; Nuzzo, 2015), and extending another researcher’s methods to build your own work. Reproducibility is a matter of degree, not of kind. We say that research is reproducible if reproducibility applies to the results to some extent. That is, some of the corresponding experiments and scientific methods are deemed to be reproducible.
 
-### Empirical and Computational Reproducibility
+##### Empirical and Computational Reproducibility
 
 We can define different types of reproducible research as follows, adapted from Stodden (2014): empirical reproducibility, and computational reproducibility.
 
@@ -30,7 +28,7 @@ The notions of **verification** and **validation** are also commonly used when r
 
 With respect to the verification process, computational reproducibility helps identify if the code is not broken, and also pinpoint any statistical issues that may invalidate the results. For instance, *p-hacking* is a common bias in science where researchers select data or statistical analyses until non-significant results become significant. By having the data and all the artifacts, including the full chain of research events, one could tweak the different variables and vary the original analysis to detect how robust and significant the claims are.
 
-### Reproducibility Modes
+##### Reproducibility Modes
 
 Reproducibility can also be defined with respect to how results can be reproduced. Some of the terms often used in this regard are replicability, approximate reproducibility, and modular reproducibility.
 
@@ -40,12 +38,11 @@ Like reproducibility, there are conflicting definitions of **replicability** acr
 
 When an experiment supports **modular reproducibility**, its different steps and components can be reproduced individually, i.e., the experiment does not need to be reproduced in its entirety. For instance, if a single binary is shared for the entire experiment, it may be hard to reproduce only some of its steps; however, if the source code is made available, researchers will have more flexibility to use the parts of the experiment they want/need. Modular reproducibility allows **reusability**: the experiment can be more easily re-used for other purposes, thus making it possible for others to modify and build upon the original work.
 
-### Reproducibility Coverage
+##### Reproducibility Coverage
 
 Another important aspect in reproducibility is its **coverage** (Freire, Bonnet, & Shasha, 2012): some experiments may not be reproduced in its entirety, including the ones that rely on data derived by third-party Web services or special hardware, or that require non-deterministic computational processes. But such experiments can, sometimes, be partially reproduced. For instance, if an experiment uses data that is derived by special or proprietary hardware, the data derivation process may not be reproducible, but the downstream analyses that use these data may be reproduced by others if the original data is made available.
 
-Provenance
-----------
+#### Provenance
 
 As the volume of digital data increases and the complexity of computational processes that manipulate these data grows, it is becoming increasingly important to manage their **provenance**. The Oxford English Dictionary defines provenance as *the source or origin of an object; its history and pedigree; a record of the ultimate derivation and passage of an item through its various owners*. Provenance helps determine the value, accuracy, and authorship of an object.
 
@@ -65,23 +62,19 @@ There are different **provenance components** that must be captured to ensure th
 
 ### Techniques
 
-Version Control
----------------
+#### Version Control
 
 Version control is a set of practices and tools originally used in software development to track the versions of software. These tools monitor, track and store changes to files within a circumscribed part of the file system, often referred to as a **repository**. The first generation of these systems are referred to as **centralized version control** systems (these include the **Concurrent Versions System (CVS)** and **Subversion (SVN)**). These systems rely on the existence and setup of a centralized server that stores the history of the changes to the code. In contrast, **distributed version control** systems (such as **git**, and **Mercurial**) do not depend on the presence of a centralized server. The history is instead stored together with the files in each user’s computer. To facilitate collaboration and coordination of work on different users’ computers, centralized servers are nevertheless often used as a common point for ’push’ and ’pull’ operations that synchronize the history between repositories stored on different computers and to merge work that is concurrently done on different files, or different parts of the same files by different users. Centralized servers can be set up on websites, and such websites offer other features. For instance, they display and allow browsing of the files in a virtual file-system-like website, and they provide web pages that can be used to browse the files in the repository, without downloading them. In addition, these websites provide for collaboration and communication among users (such as **bug-trackers**, pages in which errors in the code, or “bugs”, can be reported and addressed). The use of version control tools in science has risen in recent years, with many large collaborative projects and institutions (e.g., CERN, LSST, and NCBI) using the services of websites such as **GitHub** to distribute and collaborate on software.
 
-Literate Programming
---------------------
+#### Literate Programming
 
 Computer programs are read many more times than they are written (Wulf, 1977). Considering this fact, Knuth (Knuth, 1984) proposed that instead of focusing on computer programs as only a set of instructions to the computer, the focus of a computer program should be to explain what is (supposed to be) achieved through these instructions. This shift in focus implies a more thoughtful approach to descriptive details of the software, such as function and variable names, and a substantial focus on documentation. In a research context, computer programs are embedded within documents, such as scientific papers. This practice is also described as 'literate computing', 'literate statistical programming', 'literate data analysis', and 'literate statistical practice', in recognition of the adoption of literate programming methods from a software development context into a data analysis context. Several systems, such as **knitr** and **Jupyter** allow the writing of documents, including papers, with the code embedded or interleaved with the text.
 
-Data Publication
-----------------
+#### Data Publication
 
 Full access to the computational assets that led to previously reported results are essential for **computational reproducibility**. **Data publication** (also known as **"data sharing"**) refers specifically to public availability of the data that was used (as distinct from the software, for example). If the data is stored digitally, this can be done by sending the data to specific collaborators, by creating digital copies, or making files available over the Internet. It can be done by uploading the data to publicly available websites that either can be accessed unencumbered, or require agreement to certain terms and conditions of use. In some cases, data size also limits the possibility of data publication and it is more practical to send physical copies of the data (for example, the so-called “connectome in a box” (Poldrack & Gorgolewski, 2014), distributed by the NIH-funded Human Connectome Project, which is a hard-drive version of large collections of human MRI data). Other limitations may include restrictions due to participant privacy (the **HIPAA**, or Health Insurance Portability and Accountability Act, enacted into law in the United States in 1996, restricts the information that can be made public about participants in research data; other similar laws apply elsewhere). While data could be considered factual information that cannot be copyrighted, research data often undergoes several steps of transformation before it can be useful: it is collected, aggregated, and manipulated, using significant investment of time or resources. Thus, it could represent an original and creative expression of the source (or "raw") data and may be considered copyrightable intellectual property. For data sharing to achieve its goals of reproducibility, it is therefore important to consider and define appropriate conditions of license to potential users when sharing data.
 
-Munging
--------
+#### Munging
 
 Research data is often quite “messy”. This means that it is not immediately tractable to the standard statistical analysis without additional steps (Milliken, 2006).
 
@@ -89,8 +82,7 @@ Research data is often quite “messy”. This means that it is not immediately 
 
 Figuratively, people speak collectively of these transformations and data “janitorial” work as data "munging". This word stems from either the English word "mung", which refers to a messy mixture of things (originally, a mixture of graines) (Oxford English Dictionary, 2016a), or the word "munge", referring to "eating greedily and noisily" (Oxford English Dictionary, 2016c) (possibly related to the word "munching"). More rarely, it also refers to wiping of a person’s nose (Oxford English Dictionary, 2016b), which could be a reference to the act of cleaning itself. Alternatively, this is derived from the acronym MUNG, meaning "mash until no good" (or recursively, "mung until no good"). To maintain reproducibility of these steps, **provenance tracking** must be used to maintain the transformations and intermediate states of the data.
 
-Software Testing
-----------------
+#### Software Testing
 
 There are several types of testing to be considered:
 
@@ -102,28 +94,23 @@ There are several types of testing to be considered:
 
 4.  ***End-to-end testing***: This type of testing verifies if the operations of an entire system, under realistic conditions, produce desired results. For example, an analysis pipeline that starts with raw experimental data (considered representative of the actual data that the system is designed to analyze) transforms and munges this data, and results in some statistical analysis. Testing an entire workflows is considered end-to-end testing (see also **continuous integration**, below).
 
-Continuous Integration
-----------------------
+#### Continuous Integration
 
 In software development, **integration** refers to the steps taken at different stages of development to harmonize the operations of different parts of systems made up of small parts. The integration of new features into a software system can cause unexpected changes in its behavior. This is addressed by **software testing**: if the existing software has sufficient **test coverage** — that is, the tests exercise all the different parts of the software, and exercise a sufficiently broad range of scenarios: corner cases, handling of extreme and unusual values, etc. — then integration of a new piece of software would be evaluated against the expected behavior of the software. To make the process of integration easier, many advocate doing it *early and often* (Duvall, Matyas, & Glover, 2007). For integration testing to be **continuous**, automated systems can be configured to run the **test suite** of the software system (the full set of tests) each and every time a change to the software is introduced. Such publicly available systems include [**Travis**](https://travis-ci.com/) and [**CircleCI**](https://circleci.com/). These services integrate well with websites that provide version control repositories, such as GitHub or Bitbucket, where new contributions to the software from collaborators can be set to trigger a run of the test suite on a publicly accessible server. Continuous integration on a remote server also help make sure that the dependencies of the software are well-defined, and protects against problems that arise from changing these software dependencies by triggering a test-failure whenever these dependencies change.
 
-Workflow Management
--------------------
+#### Workflow Management
 
 Many scientific projects rely on the execution of several steps of data processing, including data munging and different steps of data analysis. Workflow management systems help distribute and orchestrate the work that needs to be done on the computational resources that are available, but also helps in *tracking provenance* of the results, by storing details of the data, the process, and the executions that take place during the analysis (Davidson & Freire, 2008).
 
-File Format Standards
----------------------
+#### File Format Standards
 
 Scientific data is saved in a myriad of file formats. A typical file format might include a **file header**, describing the layout of the data on disk, **metadata** associated with the data, and the data itself, often stored in binary format. In some cases (e.g., **CSV (or comma-separated value) files**), data will be stored as text. The danger of proliferation of file formats in scientific data lies in the need to build and maintain separate software tools to read, write and process all these data formats. This makes interoperability between different practitioners more difficult, and limits the value of data sharing, because access to the data in the files remains limited.
 
-Licensing
----------
+#### Licensing
 
 In most countries in the world, creative work is protected by copyright laws. International conventions, and primarily the Berne Convention of 1886, protect the copyright of creators even across international borders for 50 years after the death of the creator. This means that copying and using the creative work is limited by conditions set by the creator, or another copyright holder. For example, in many cases musical recordings may not be copied and further distributed without the permission of the musician, or of the production company that has acquired the copyright from the musician. Facts about the universe that are discovered through research are not subject to copyright, but the collection, aggregation, analysis and interpretation of research data may be considered creative work, and could be protected by copyright laws. Thus, the consumption of research publications is governed by copyright law. Furthermore, even data sharing is often governed by copyright laws, because the compilation of data to be shared often requires a creative effort. Another case of resarch-relevant copyrighted products is software that is developed in the course of research. In all of these cases, if license terms are not explicitly specified, the work is considered to be protected as "all rights reserved". This means that no one but the creator of the work can use the work unencumbered. For software this means that copying and further distribution of the software is prohibited. Even running the software may be restricted. The exact selection of a license is beyond the scope of this section, but depends on your intentions and goals with regard to the software (Fogel, 2005; Hunter, 2004; Rosen & Einschlag, 2004).
 
-Virtualization and Environment Isolation
-----------------------------------------
+#### Virtualization and Environment Isolation
 
 Software often requires other software to run properly. The software and hardware elements that are required to properly run a program are known as the **software dependencies**. Because of differences in hardware and operating systems, and because of conflicting dependencies between different programs, the creation and maintenance of software environments that have all the dependencies for a software system is cumbersome, and may require substantial system administration expertise. Pre-configured software environments that include all of the dependencies, software, and sometimes also the data needed for an analysis can be provided through systems that present the user a virtual machine (or VM) that runs in an isolated manner. These systems for virtualization include **VirtualBox** and **Vagrant**.
 
@@ -131,34 +118,33 @@ These systems rely on the ability to store an entire virtual machine as a file t
 
 ### Tools
 
-Programming Language and Related Tools
---------------------------------------
+#### Programming Language and Related Tools
 
-### C/C++
+##### C/C++
 
 C is one of the most widely used programming languages of all time. Designed to be a compiled language, C was used to re-implement the Unix operating system, and many high-level languages were implemented in C, including Python. C++ is an extension of C that provides support for object-oriented capabilities, and it has become one of the most widely used object-oriented languages, especially for large scale and high performance applications.
 
-### Go
+##### Go
 
 [Go](https://golang.org/) is a compiled programming language developed at Google, mostly used in some of the Google’s production systems.
 
-### IPython
+##### IPython
 
 [IPython](http://ipython.org/), or Interactive Python (Pérez & Granger, 2007), is a command shell that allows interactive computing for Python, including tab completion, history (provenance capture), parallel computing tools, and support for interactive data visualization.
 
-### Java
+##### Java
 
 [Java](https://www.java.com/) is a programming language that is compiled into Java bytecode and run on a Java Virtual Machine (JVM), which ensures that all implementations are interoperable in different environments.
 
-### JavaScript
+##### JavaScript
 
 [JavaScript](https://www.javascript.com/) is an interpreted programming language extensively used for World Wide Web content production, alongside HTML and CSS.
 
-### Jupyter
+##### Jupyter
 
 [Jupyter](http://jupyter.org/) is a Web application that allows users to create and share *notebooks*, documents that contain live and dynamic code. The Jupyter project evolved from the original IPython, generalizing the interactive environment from being Python-specific to supporting over 40 programming languages.
 
-### Python
+##### Python
 
 [Python](https://www.python.org/) is a general-purpose interpreted programming language. While Python has a comprehensive standard library, [PyP](https://pypi.python.org/pypi) (the Python Package Index) allows users to search for and download a number of additional Python packages and libraries. Many of these packages are remarkably popular and widely used in different sciences, including:
 
@@ -178,7 +164,7 @@ C is one of the most widely used programming languages of all time. Designed to 
 
 -   [*Nipype*](http://nipy.org/nipype/): this library provides a uniform interface for creating workflows that integrate a collection of neuroimaging software and applications.
 
-### R
+##### R
 
 [R](https://www.r-project.org/) is a widely used interpreted programming language for statistical computing, data analysis and visualization, with its popularity largely increasing in diverse scientific fields during the past few years (Tippmann, 2014). There is a large and vibrant community of scientists using and developing software in R, with over 8000 packages contributed to the [Comprehensive R Archive Network](https://cran.r-project.org/). These packages are free to download and extend the functionality of R by adding specialized statistical algorithms, visualization techniques and file handling methods. The following R packages are worth noticing:
 
@@ -200,325 +186,315 @@ C is one of the most widely used programming languages of all time. Designed to 
 
 -   [*testthat*](https://cran.r-project.org/web/packages/testthat/index.html): this library includes functions to set up unit testing for the code.
 
-### RStudio
+##### RStudio
 
 [RStudio](https://www.rstudio.com/) is an integrated development environment (IDE) for R that includes both desktop and web server versions. Its code editor provides syntax highlighting, tab-completion, indenting, and definitions. It includes a debugging console, breakpoints, an environment panel, history, tracebacks, and integrated R help and documentation. It supports 2d and 3d visualizations, data display, and data manipulation. Knitr, markdown, and git are deeply integrated into RStudio, enabling version controlled programming via R markdown documents.
 
-### Ruby
+##### Ruby
 
 [Ruby](https://www.ruby-lang.org/) is an interpreted programming language commonly used in Web development, and its syntax is broadly similar to that of Python.
 
-### Scala
+##### Scala
 
 [Scala](http://www.scala-lang.org/) is a programming language intended to be compiled to Java bytecode and executed on a JVM. Java and Scala are interoperable in the sense that libraries from one language can be used inside the other language.
 
-Documentation Generators
-------------------------
+#### Documentation Generators
 
-### Doxygen
+##### Doxygen
 
 [Doxygen](http://www.stack.nl/~dimitri/doxygen/) is a tool that automatically generates documentation (in different formats) from annotated source code, supporting a number of different programming languages.
 
-### Read the Docs
+##### Read the Docs
 
 [Rea](https://readthedocs.org/) is a hosting service for software documentation. The service facilitates the process of generating documentation for the different versions of the code, Read the Docs can be set up to automatically build the documentation whenever a new version of the code is generated.
 
-### Roxygen
+##### Roxygen
 
 [Roxygen](http://roxygen.org/) is a Doxygen-like system for R.
 
-### Sphinx
+##### Sphinx
 
 [Sphinx](http://sphinx-doc.org/) is a tool that can generate documentation in many different file formats.
 
-### Pandoc
+##### Pandoc
 
 [Pandoc](http://pandoc.org/) is a tool that can convert between many different file formats, including LaTeX, HTML, Microsoft Word documents, and Markdown files.
 
-Version Control
----------------
+#### Version Control
 
-### Bitbucket
+##### Bitbucket
 
 [Bitbucket](https://bitbucket.org/) is a repository hosting service for two distributed version control systems: git and [Mercurial](https://www.mercurial-scm.org/). Similar to GitHub, is provides a Web-based interface to facilitate the collaboration in a project.
 
-### Git
+##### Git
 
 [Git](https://git-scm.com/) is a distributed version control system that has become [widely used](https://ianskerrett.wordpress.com/2014/06/23/eclipse-community-survey-2014-results/) in the past few years.
 
-### GitHub
+##### GitHub
 
 [GitHub](http://github.com/) is a git repository hosting service: developers maintain their git repositories on the Web. It provides a Web-based interface, as well as a desktop application, to facilitate the collaboration with other people in the same project. GitHub has numerous features, including, among others, forking, issue tracking, pull requests, and wikis.
 
-### SVN
+##### SVN
 
 [Subversion](https://subversion.apache.org/), or SVN, is a centralized version control system.
 
-Data Munging and Analysis
--------------------------
+#### Data Munging and Analysis
 
-### Apache Hadoop
+##### Apache Hadoop
 
 [Hadoop](https://hadoop.apache.org/) is a popular framework for distributed processing of large datasets across clusters of computers. Hadoop uses the map-reduce programming model for scaling up to multiple machines. Apache HDFS is the distributed file system used to store input, intermediate, and output data.
 
-### Apache Spark
+##### Apache Spark
 
 [Spark](http://spark.apache.org/) is a framework for distributed processing that, in contrast to Hadoop, provides in-memory primitives that can achieve better performance for a number of applications.
 
-### Connectome Workbench
+##### Connectome Workbench
 
 [The Connectome Workbench](http://www.humanconnectome.org/software/connectome-workbench.html) is a tool that provides multiple resources for mapping neuroimaging data.
 
-### MATLAB
+##### MATLAB
 
 [MATLAB](http://www.mathworks.com/products/matlab/) is a numerical computing environment and also a programming language widely popular for data and statistical analysis. It provides many useful features, especially for data management, matrix manipulation, and plotting.
 
-### Microsoft Excel
+##### Microsoft Excel
 
 [Excel](https://products.office.com/en-us/excel) is a spreadsheet system developed by Microsoft that has many different features, including graphing tools and support for a macro programming language.
 
-### MongoDB
+##### MongoDB
 
 [MongoDB](https://www.mongodb.com/) is a database system that has been widely used recently, in particular for distributed stores. Instead of storing data in multiple relational structures—such as in traditional relational systems — MongoDB is document-oriented, it stores data in a minimal number of documents.
 
-### pandas
+##### pandas
 
 [panda](http://pandas.pydata.org/) is a Python library that has many data analysis functionalities, including high-level data manipulation tasks (selecting, filtering, slicing, sorting, grouping, plotting, etc).
 
-### SEPlib
+##### SEPlib
 
 [SEPlib](http://sepwww.stanford.edu/doku.php?id=sep:software:seplib) is a distributed software package for seismic data processing, including seismic processing routines, a graphics library, and a IO subroutine library.
 
-### Stata
+##### Stata
 
 [Stata](http://www.stata.com/) is a commercial data analysis and statistical analysis software.
 
-Data Visualization
-------------------
+#### Data Visualization
 
-### Adobe Photoshop
+##### Adobe Photoshop
 
 [Adobe Photoshop](http://www.adobe.com/products/photoshop.html) is a popular commercial graphics editor, providing a plethora of features to compose and manipulate graphics.
 
-### D3
+##### D3
 
 [D3](http://d3js.org/) is a JavaScript library used for manipulating data and creating 2D interactive information and data visualizations.
 
-### ggplot2
+##### ggplot2
 
 [ggplot2](http://ggplot2.org/) is a data visualization library for R.
 
-### matplotlib
+##### matplotlib
 
 [matplotlib](http://matplotlib.org/) is a popular 2D plotting library for Python.
 
-Workflow and Provenance Management
-----------------------------------
+#### Workflow and Provenance Management
 
-### EUPS
+##### EUPS
 
 [EUPS](https://github.com/RobertLuptonTheGood/eups) is a version management tools that tracks the exact project computational dependencies.
 
-### Make
+##### Make
 
 [GNU Make](https://www.gnu.org/software/make/) and [CMake](https://cmake.org/) are tools commonly used to build and derive executable programs from source file. These utilities obtain the dataflow of how to build a program from files called *makefiles*.
 
-### VisTrails
+##### VisTrails
 
 [VisTrails](http://www.vistrails.org/) is an open-source scientific workflow system that provides support for simulations, data exploration, and visualization, while having many capabilities for provenance capture, management, and analytics.
 
-Software Testing and Continuous Integration
--------------------------------------------
+#### Software Testing and Continuous Integration
 
-### BuildBot
+##### BuildBot
 
 [BuildBot](http://buildbot.net/) is a Python-based continuous integration tool that automates the process of building and testing software projects.
 
-### CircleCI
+##### CircleCI
 
 [CircleCI](https://circleci.com/) is a hosted continuous integration service for Web and mobile applications that, similar to Travis CI, can be used to automatically build and test projects hosted at GitHub.
 
-### Coveralls
+##### Coveralls
 
 [Coveralls](https://coveralls.io/) is a tool that automatically identifies the test coverage in a project, showing which parts of the code are not covered by the test suite.
 
-### devtools
+##### devtools
 
 [devtools](https://cran.r-project.org/web/packages/devtools/index.html) is a library that contains a series of functions to facilitate package development for R.
 
-### Google Test
+##### Google Test
 
 [Google Test](https://github.com/google/googletest) is a unit testing library for C++ developed and used by Google.
 
-### Jenkins
+##### Jenkins
 
 [Jenkins](https://jenkins-ci.org/) is a Java-based continuous integration tool that automates the process of building and testing software projects.
 
-### JIRA
+##### JIRA
 
 [JIRA](https://www.atlassian.com/software/jira) is a commercial software for bug tracking, issue tracking, and project management.
 
-### Nose
+##### Nose
 
 [nos](https://nose.readthedocs.org/) is a Python library that implements functions to assist in writing and running software tests.
 
-### nose2
+##### nose2
 
 [nose2](https://nose2.readthedocs.org/) — a successor to nose — is a unit testing library for Python.
 
-### testthat
+##### testthat
 
 [testtha](https://cran.r-project.org/web/packages/testthat/index.html) is a unit testing library for R.
 
-### Travis CI
+##### Travis CI
 
 [Travis CI](https://travis-ci.com/) is a hosted, distributed continuous integration service that can be used to automatically build and test projects hosted at GitHub. If the service is configured, every new commit to the GitHub repository triggers Travis CI, which tries to build the project and run tests. Travis CI is available for a number of different languages.
 
-Virtualization and Environment Isolation
-----------------------------------------
+#### Virtualization and Environment Isolation
 
-### Amazon EC2
+##### Amazon EC2
 
 [Amazon EC2](https://aws.amazon.com/ec2/) is a Web service that provides compute infrastructure in the cloud. Virtual environments can be created, launched, and terminated as needed, and users pay by the hour for active servers.
 
-### Docker
+##### Docker
 
 [Docker](https://www.docker.com/) is a tool that automates the deployment of applications inside software containers, which are much lighter than virtual machines: containers are isolated but share the operating system, and, when appropriate, binaries and libraries as well. [boot2docker](http://boot2docker.io) is a Linux distribution made specifically to run Docker containers.
 
-### Vagrant
+##### Vagrant
 
 [Vagrant](https://www.vagrantup.com/) is a tool used to create and configure virtual environments, such as virtual machines and Docker containers.
 
-### Virtualenv
+##### Virtualenv
 
 [Virtualenv](https://virtualenv.readthedocs.org/) is a tool that creates isolated Python environments. This allows multiple Python projects that have different (and sometimes conflicting) dependencies to coexist in the same computer.
 
-Data Sharing and Repositories
------------------------------
+#### Data Sharing and Repositories
 
-### Amazon S3
+##### Amazon S3
 
 [Amazon S3](https://aws.amazon.com/s3/) is a service for online file storage on the cloud. S3 has been widely used for Web hosting, image hosting, and storage for backup systems.
 
-### arXiv
+##### arXiv
 
 [arXiv](http://arxiv.org/) is a repository of electronic preprints of scientific publications, and is widely used in the fields of mathematics and physics.
 
-### CrossRef
+##### CrossRef
 
 [CrossRef](http://www.crossref.org/) is an official Digital Object Identifier (DOI) Registration Agency. A DOI is often assigned to a publication or research data so that it can be uniquely identified, and therefore, citable. Services like Dataverse and figshare automatically generate DOI’s for data that is uploaded to their systems.
 
-### Dataverse
+##### Dataverse
 
 [The Dataverse Project](http://dataverse.org/) is a repository for sharing, citing, and archiving research data. It offers support for backups, recovery, data discovery and cataloging, metadata extraction, and preservation.
 
-### Docker Hub
+##### Docker Hub
 
 [Docker Hub](https://hub.docker.com/) is a service for building and shipping Docker containers. Docker Hub allows integration with GitHub and BitBucket, as well as collaboration between different users, among other features.
 
-### Dropbox
+##### Dropbox
 
 [Dropbox](https://www.dropbox.com/) is a service that hosts files on the Web as well as synchronizes files across different platforms. Dropbox also has file versioning features, where users may revisit old versions of their files without losing any work.
 
-### figshare
+##### figshare
 
 [figshare](https://figshare.com/) is a repository for sharing and citing research data (results and manuscripts).
 
-### Flickr
+##### Flickr
 
 [Flickr](https://www.flickr.com/) is a service to host and share images and videos on the Web. It is widely popular among photo researchers and bloggers.
 
-### Mendeley and Zotero
+##### Mendeley and Zotero
 
 [Mendeley](https://www.mendeley.com/) and [Zoter](https://www.zotero.org/) are both Web services and desktop applications for managing and sharing research publications.
 
-### NeuroVault
+##### NeuroVault
 
 [NeuroVault](http://neurovault.org/) is a repository for sharing statistical maps, parcellations, and atlases of the human brain.
 
-### Zenodo
+##### Zenodo
 
 [Zenodo](https://zenodo.org/) is a repository for sharing and citing research results, including data and publications.
 
-Document Authoring
-------------------
+#### Document Authoring
 
-### LaTeX
+##### LaTeX
 
 [LaTeX](https://www.latex-project.org/) is a word processor and a document markup language commonly used for writing research publications. In contrast with Microsoft Word, LaTeX is not a WYSIWYG editor: the document needs to be compiled to generate the finished product.
 
-### Microsoft Word
+##### Microsoft Word
 
 [Word](https://products.office.com/en/word) is a document and word processing software developed by Microsoft. Microsoft Word is a WYSIWYG editor, while editing, the content onscreen appears in a form that is similar to its appearance as a finished product (WYSIWYG stands for “What You See Is What You Get”).
 
-### Overleaf
+##### Overleaf
 
 [Overleaf](https://www.overleaf.com/) is an online platform for collaborative writing and publishing using LaTeX, with an integrated real-time preview that closely resembles a WYSIWYG editor.
 
-File Formats
-------------
+#### File Formats
 
-### API
+##### API
 
 An API (or application programming interface) are elements of the design of a software system that that allows programmers to use the system to build applications out of it. For example, a software library API will be the design of functions and objects in the library that can be combined together to create new functions and objects.
 
-### CSV
+##### CSV
 
 The CSV (“Comma Separated Values”) file format stores data in a tabular fashion in plain text. This format is often used to transfer data between applications.
 
-### DO
+##### DO
 
 A DO file is a Web-base Java program that is run by a Web server.
 
-### Dockerfile
+##### Dockerfile
 
 A Dockerfile is a file that has a set of instructions and commands for building a Docker container.
 
-### FIF
+##### FIF
 
 A FIF (“Fractal Image File”) file stores images in fractals, which can be resized without losing image quality.
 
-### HDF5
+##### HDF5
 
 The HDF5 file format is designed to store and organize large amounts of data. Different data models can be specified for storing data, including multidimensional arrays and tables.
 
-### ipynb
+##### ipynb
 
 An ipynb file represents an IPython notebook document.
 
-### JSON
+##### JSON
 
 JSON is a data-interchange format that is both human- and machine-readable, storing and transmitting data as attribute-value pairs. It has been widely used recently, largely replacing XML.
 
-### Markdown
+##### Markdown
 
 A Markdown file contains data in a simple markup language that facilitates the conversion from plain text to HTML and other formats. Common extensions for this file include *md* and *Rmd* (the latter represents an R Markdown file where R code is included among the text).
 
-### netCDF
+##### netCDF
 
 The netCDF ("network common data format") file format is machine-independent format commonly used for sharing array-oriented scientific data.
 
-### PDF
+##### PDF
 
 The PDF (“Portable Document Format”) file format is commonly used to display documents in an interoperable manner.
 
-### RAID
+##### RAID
 
 RAID (redundant array of independent disks) is a system that confers robustness to data storage through redundancy across sub-partitions. Every bit of data is stored in at least two different partitions, such that if any given partition fails, it can be swapped out without incurring data loss.
 
-### SQL
+##### SQL
 
 A SQL (“Structured Query Language”) file contains a series of database queries to analyze and manage tables in a database. These queries are represented by statements written in SQL, a programming language designed for managing data in relational databases systems.
 
-### SVG
+##### SVG
 
 The SVG (“Scalable Vector Graphics”) file represents graphics using an XML-based format that offers support for interactivity and animation.
 
-### VT
+##### VT
 
 A VT file stores a VisTrails workflow and its corresponding provenance.
 
-### XML
+##### XML
 
 An XML (“Extensible Markup Language”) file stores data in XML, which is a markup language that encodes documents in a format that is both human- and machine-readable. XML is known to provide interoperability among different applications.
 

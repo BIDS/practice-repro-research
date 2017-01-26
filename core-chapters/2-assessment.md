@@ -66,8 +66,7 @@ Another aspect of provenance tracking is the tracking of different versions of t
 
 The public availability of the data and software are key components of computational reproducibility. To facilitate its evaluation, we suggest that researchers consider the following series of questions.
 
-Availability of data
---------------------
+#### Availability of data
 
 -   Are the data available through an openly accessible database? Often data is shared through the internet. Here, we might ask about the long-term reliability of the web address: are the URLs mentioned in a manuscript permanently and reliably assigned to the dataset? One example of a persistent URL is a Digital Object Identifier (DOI). Several major repositories provide these for data sets (e.g., [Figshare](http://www.figshare.com)). Datasets accessible via persistent URLs increase the reproducibility of the research, relative to use of an individually maintained website, such as a lab group website or a researcher's personal website. This is because when an individually maintained websites changes its address or structure over time, the previously published URLs may no longer work. In many academic institutions, data repositories that provide persistent URLs are maintained by the libraries. These data repositories provide a secure environment for long-term citation, access, and reuse of research data.
 
@@ -83,8 +82,7 @@ Proprietary file formats are problematic for reproducibility because they may no
 
 -   If the data are not directly available, for example if the data are too large to share conveniently, or have restrictions related to privacy issues, do you provide sufficient instructions to obtain equivalent data? For example, are the experimental protocols used to acquire the original data sufficiently detailed?
 
-Availability of software
-------------------------
+#### Availability of software
 
 -   Is the software available to download and install? Software can also be deposited at repositories that issue persistent URLs, just like data sets. This can improve the longevity of its accessibility.
 
@@ -98,8 +96,7 @@ Availability of software
 
 -   Are the dependencies of the software (hardware and software) described properly? Do these dependencies require only a reasonably minimal amount of effort to obtain and use? For example, if a research project requires the use of specialized hardware, it will be harder to reproduce. If it depends on expensive commercial software, likewise. Use of open-source software dependencies on commodity hardware is not always possible, but when possible electing to use these increases reproducibility.
 
-Software Documentation
-----------------------
+#### Software Documentation
 
 Documentation of the software is another factor in removing barriers to re-use. Several forms of documentation can be added to a research repository and each of them adds to reproducibility. Relevant questions include:
 
@@ -111,8 +108,7 @@ Documentation of the software is another factor in removing barriers to re-use. 
 
 -   Are there usage examples? This is particularly important for scientific computing, usage examples demonstrate the kinds of transformations, analysis pipelines and visualizations that can be undertaken using the software, and provide a point of departure for new explorations using the software. Systems that allow examples to be routinely run as part of compiling the documentation are particularly useful, because they are automatically updated when the code is updated. One such system that was originally developed as part of the PyMVPA software library (Hanke et al., 2009) has been widely adopted and further developed by many other scientific Python libraries, including scikit-image (Van Der Walt et al., 2014) and scikit-learn (Pedregosa et al., 2011) and is now [its own software project](http://sphinx-gallery.readthedocs.io).
 
-Software engineering
---------------------
+#### Software engineering
 
 While not all scientific software needs to apply rigorous software engineering practices, using these practices increases the reproducibility and long-term sustainability of the software, and enables expansion of the software to handle extensions of the work. While a full implementation of these practices may be challenging for smaller projects, an awareness of the problems they are intended to solve can lead to better practices in other areas of the software development process. A few guidelines for assessing the software engineering of a computational research codebase follow.
 
@@ -130,8 +126,7 @@ Further open-source and software engineering practices can help support a commun
 
 -   While private communication can be used to help individual users of the software, these modes of communication do not scale very well to a larger community of users. Requiring such private communication sets up barriers for users to reproduce the work. Setting up a public communication channel for users of the software to ask questions about use of the software increases the reproducibility. These can include public mailing lists, forums and/or chat rooms.
 
-Copyright issues and other data encumbrances
---------------------------------------------
+#### Copyright issues and other data encumbrances
 
 Creative work, such as research, is protected by copyright laws. While these laws protect the rights of creators and researchers, they can also impede the distribution and verification of their work. Work that has no license or copyright information is still protected by copyright law. This prevents others from having any rights to reproduce the work or build upon it. Therefore, the application of an appropriate license is important in increasing the reproducibility of the work.
 
@@ -153,7 +148,7 @@ Copyleft licenses allow distribution and modification of the software, but requi
 
 -   Is this license sufficiently permissive to allow others to use the software, reproduce the results and extend them?
 
-### Proprietary information and software.
+##### Proprietary information and software.
 
 Often authors may not make the data or software available due to external restrictions. We might ask the following questions to assess the effect these restrictions might have on reproducibility:
 

@@ -94,8 +94,7 @@ My general approach to an open lab notebook has been described previously (Gewin
 </tbody>
 </table>
 
-Interactive workflow
---------------------
+#### Interactive workflow
 
 My daily workflow on an active project simply involves opening a new `.Rmd` document with the day's date in my lab notebook. In this file, I write the code, text, equations, and other elements of my work (see diagram, top left).
 
@@ -105,8 +104,7 @@ During active research, I often find it impractical to clearly separate out the 
 
 I write / edit this `.Rmd` file inside an instance of RStudio which runs inside a Docker container, which in turn may be running on my laptop, an Amazon Web server, or even an NSF super-computing cluster depending my needs that day. RStudio is a popular integrated development environment for R users which can be run in server mode through a web browser. Docker is a popular containerization tool which allows one to create a portable image of one's entire software environment that can be easily moved around between different computers, regardless of architecture. I believe this has major implications for addressing common problems in reproducibility, as I have described more fully elsewhere (Boettiger, 2015). A Dockerfile in my notebook provides an executable recipe for building this computational environment on top of existing, general-purpose Docker images maintained by the [Rocker project](https://github.com/rocker-org).
 
-Automated workflow
-------------------
+#### Automated workflow
 
 At regular intervals I "commit" my notebook in `git` and "push" this progress to GitHub, a widely used version control system and public repository for code and other digital material. This triggers the automated build portion of my workflow, illustrated in the center of the diagram. A Continuous Integration platform ([CircleCI](http://circleci.com) in my case, as the more widely used platform, [Travis](https://travis-ci.org/), did not support Docker execution until much more recently) detects this commit, and begins to execute and assemble my code.
 
@@ -116,8 +114,7 @@ As the notebook is already organized as a Jekyll repository, just with `.Rmd`-fo
 
 Each year I archive the GitHub repository that contains that year's notebook on figshare, adding the DOI badge to the repository's README.
 
-Project finalization / publication
-----------------------------------
+#### Project finalization / publication
 
 Eventually multiple entries will relate to the same project. At this point, I frequently want to reuse code first developed in a previous entry. This is my signal that it is time to create a new project on GitHub. (Figuring this out is much harder than it sounds!) I create a new public GitHub repo using a name that matches a tag in the relevant notebook entries. In the `R/` directory I store functions that provide these reusable bits. For non-trivial functions, I try and develop unit tests (in the `/tests` directory) -- these usually come directly from the interactive tests I write in the notebook when first creating these functions. I also add minimal Roxygen documentation to the functions I create, usually just to remind me what the input and outputs are. Data goes in the `/data` directory; or more frequently, as R scripts that either simulate or download and clean the data from external sources.
 
@@ -131,8 +128,7 @@ When preparing for submission, I upload a copy of the manuscript (in `tex` forma
 
 The reader is encouraged to view any of the real-world examples of this process in the repositories of my recent projects, such as <https://github.com/cboettig/nonparametric-bayes>, or in the pages of my online lab notebook at <http://carlboettiger.info/lab-notebook>.
 
-Additional questions
---------------------
+#### Additional questions
 
 -   **Frequency:** How often does the step happen and how long does it take?
 
@@ -166,8 +162,7 @@ The particular pattern I have used to chain this together with CI, etc, is proba
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 Reproducibility in this context is 'computational reproducibility.' It means a good-faith effort to make sure that the analysis can produce qualitatively identical results while running on comparable hardware. This means certain things do not need to be reproduced: e.g. how long the code takes to run may vary by hardware and operating system, but this is okay. Nor am I not concerned with bitwise identical results, nor with necessarily reproducing stochastic random draws -- rather, I expect conclusions from reproducible results to be robust to the details of stochastic seed or choice of random number generator.
 
@@ -175,33 +170,27 @@ I am also concerned that reproducibility is modular -- that individual component
 
 Lastly, I think it is important to identify *who* should be able to reproduce the analysis. Like the paper itself, the analysis requires a certain degree of expertise to understand, and I do not expect that individuals with no familiarity with programming, statistics, or scientific process can reproduce the analysis. However, I do expect that researchers with some scientific background in my area (e.g. the broadest readership of the journal in which it is published) and with minimal familiarity with the R language or similar computing langauage can reproduce the overall results after suitable investment of time and effort in reading the documentation.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 Reproducibility makes results more reliable, and more importantly, makes it easier to extend, test, and build upon existing results. Ultimately this makes it easier for an individual to build on their own work and the work of others, making for faster, better science.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 Independent study of examples, experimentation, and reading, and connecting with other researchers sharing similar interests through the internet and social media.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 Not a standard practice. In the short-term it takes more time. It may also increase the probability of errors in your work being discovered.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 Making research easier to do. Reproducible research facilitates collaboration, particularly with myself. It improves my confidence in my own results and helps me build more efficiently on work that I have already done.
 
-Are there any best practices that you'd recommend for researchers in your field?
---------------------------------------------------------------------------------
+#### Are there any best practices that you'd recommend for researchers in your field?
 
 Adopting tools that are widely used within my field (and others) for reproducibility. These include: GitHub, Docker, rmarkdown.
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 The documentation linked in Table 1 would be a great place to start on any of the individual tools. Additionally, see the reproducible research workshop developed by NESCent: <https://github.com/Reproducible-Science-Curriculum>
 

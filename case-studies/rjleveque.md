@@ -40,34 +40,29 @@ This workflow proved to be very valuable for this long-term project in which man
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 There were two distinct aspects of reproducibility important in this work. The original development of new techniques was performed in the context of a project that went on for several years and required running many tsunami simulations with the GeoClaw code for the probabilistic studies, each of which took several hours of computing time and produced large quantities of output data. During this time frame the GeoClaw software was evolving, along with our methodologies. [GeoClaw](https://github.com/clawpack/geoclaw) is openly developed on the GitHub site. We needed to be able to compare new results with those computed previously, and be able to identify what changed in the software or our code in between, if necessary. For this aspect the goal was not to openly share all of our work or the results (nor were we allowed to, due to the nature of the project), but we needed to be able to reproduce results ourselves if necessary and keep the code under version control to identify changes.
 
 The other aspect is that we wanted the particular new method written up in the journal paper to be accompanied by the Python code that implements the method and a sample set of data that was used to produce some of the figures in the paper. In this context we wanted the figures to be reproducible by a reader using this code, in hopes that this would aid others in understanding the methodology and adapting the code to solve their own problems.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 For researchers who develop new methods and algorithms, it is often important to be able to see the details that are in the code but don't make it into the paper, both to better understand the work and to find potential errors. It also facilitates comparing different methods for the same problem.
 
 In natural hazards modeling, the simulation results may be used by engineers or policy makers to make decisions with public safety implications. Transparency and reproducibility are important aspects of accountability.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
-I became proficient with git initially through involvement in open source software projects.
+My interest in the topic came out of frustration with the publications in numerical analysis (including my own) where it was impossible to reproduce published results or fully understand the implementation of new algorithms they describe. I became proficient with git initially through involvement in open source software projects.
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 -   Convincing collaborators to learn and use a common set of tools is sometimes a challenge, and some researchers are more willing to share code and data than others.
 
 -   Some input data and/or results can not be shared publicly, so it may be necessary to selectively share data and perhaps have both private and public repositories.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 -   Ability to easily modify and build on past work.
 
@@ -75,15 +70,15 @@ What do you view as the major incentives for doing reproducible research?
 
 -   Facilitates collaboration.
 
-Are there any best practices that you'd recommend for researchers in your field?
---------------------------------------------------------------------------------
+#### Are there any best practices that you'd recommend for researchers in your field?
 
 -   Using version control of some sort is the single most important first step.
 
 -   Make a habit of cleaning up code used to produce final results so that it's well documented and all the necessary steps are clearly laid out. Then run through them from scratch if possible to insure that it works. Even if you don't plan to share it with others, your future self will thank you.
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+-   If you do share code and/or data, do so in an archival repository that issues a DOI, and attach a license.
+
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 -   The UW eScience Institute Reproducibility and Open Science Working Group has developed [some guidelines](http://uwescience.github.io/reproducible/guidelines.html).
 

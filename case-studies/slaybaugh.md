@@ -42,18 +42,15 @@ They key tools I use are Doxygen, git (for version control), LaTeX, and plotting
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 The first way I think of reproducibility is "can I/my lab reproduce the results in my paper exactly?" After that, "can an independent researcher, given that they have legal access to the required data and software, reproduce the results?" Nuclear engineering data and codes are often controlled, so for many projects only researchers within my field will have access to the required data and software. Fortunately, such non-open-source codes are typically available at no cost to researchers through a simple licensing process.
 
-Why do you think that reproducibility in your domain is important?
-------------------------------------------------------------------
+#### Why do you think that reproducibility in your domain is important?
 
 The codes that we write are often used to investigate new nuclear systems and make long-term policy or design decisions based on the results. They are also used to study existing nuclear systems. This is important stuff; the codes need to be right and the results need to be verifiable.
 
-How or where did you learn about reproducibility?
--------------------------------------------------
+#### How or where did you learn about reproducibility?
 
 -   Mentors: my PhD advisers valued reproducible practices and insisted that we used them
 
@@ -65,24 +62,20 @@ How or where did you learn about reproducibility?
 
 -   Self-study: looking up things I saw people do that looked helpful
 
-What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
------------------------------------------------------------------------------------------------------------------------
+#### What do you see as the major challenges to doing reproducible research in your domain, and do you have any suggestions?
 
 The biggest challenge is legal: only some people can access the codes and data required. A secondary challenge is access: some of the work I do requires high-performance computing that is not readily available to many.
 
-What do you view as the major incentives for doing reproducible research?
--------------------------------------------------------------------------
+#### What do you view as the major incentives for doing reproducible research?
 
 *Ethical mandate*: I want my work to be right and for others to be able to know that it is right.
 
 *Impact*: My ideas and products might then be adopted and built upon.
 
-Are there any best practices that you'd recommend for researchers in your field?
---------------------------------------------------------------------------------
+#### Are there any best practices that you'd recommend for researchers in your field?
 
 Testing, testing, testing.
 
-Would you recommend any specific resources for learning more about reproducibility?
------------------------------------------------------------------------------------
+#### Would you recommend any specific resources for learning more about reproducibility?
 
 Software Carpentry; the new Scopatz-Huff book.

@@ -34,8 +34,7 @@ We did not keep a detailed record of time spent, but our computational practices
 
 Since we view computational reproducibility as a cross-cutting concern of all project aspects, we have adopted a set of computational practices, which we (JM, KO, PS) followed (almost) whenever we were working on the project. Exceptions include that we did not record all of our in-person discussions or whiteboard work. However, we endeavored to record summaries of these activities. These computational practices, described in Millman & Pérez (2014), are used widely in the open source scientific Python community. While developed for managing software contributions, these practices are ideal for ensuring computational reproducibility in scientific and statistical research. We will illustrate how we leverage the software infrastructure and development practices of `permute` to conduct reproducible and collaborative applied statistics research with our colleagues. We discuss the software tools and practices briefly in Key tools and practices below.
 
-Understand problem (80 hours)
------------------------------
+#### Understand problem (80 hours)
 
 The Kliman-Stark research project sought to identify characteristics of effective clinical interactions with children on the autistic spectrum. The project first required developing a set of characteristics that observers could use to “tag” what was happening in each 30-second interval of a therapy session. After they developed a taxonomy of clinical interactions, Kliman and NS had a number of trained raters watch videos of therapy sessions and label each 30-second interval using the collection of tags. For the classification system to be meaningful and useful, different raters must generally agree on whether a given tag applies to a given video segment: there must be inter-rater reliability. Of course, if a tag is never used or is always used, inter-rater reliability will be perfect, but the tag is useless for distinguishing clinical interactions.
 
@@ -43,15 +42,13 @@ That led to a statistical question: how to assess the evidence in the tagged vid
 
 Once PS had an initial understanding of NS’s problem, we (JM, KO, PS) met regularly (approximately weekly, sometimes more) as a team to discuss the project. Initially these discussions involved a lot of work on whiteboards and asking a lot of probing questions. This helped us develop a shared understanding of the problem, understanding that improved by explaining things to one another and by asking hard questions about our planned approach and whether it could address the question of interest. As our understanding of the problem progressed, our work transitioned from working on whiteboards to testing our ideas out on a computer. We often used pair programming at this stage and sometimes we all sat in front of one computer, while one of us typed code in an interactive IPython session. This helped ensure that we all understood the problem well and it also helped us catch errors (typos as well as conceptual misunderstandings).
 
-Get and clean data (13 hours)
------------------------------
+#### Get and clean data (13 hours)
 
 The tag data were collected by NS and raters working at her direction. The data comprise ratings of segments of 8 videos by 10 trained raters. Each video is divided into approximately 40 time segments. In each time segment, none, any, or all of 183 types of activity might be taking place. The raters indicated which of those activities was taking place during each segment of each video.
 
 PS received the data from NS as an Excel spreadsheet that had been entered by hand by NS and an assistant. Understanding the “data dictionary” and vetting for obvious errors entailed several rounds of email between PS and NS before PS had a version of the data that did not have obvious errors. PS then exported the Excel data to comma-separated value (CSV) format. The original data contained personally identifying information. Using regular expressions in an interactive text editor, PS substituted unique numerical identifiers for raters’ names in the CSV file. While this step was not performed reproducibly (i.e., not scripted), it can be checked readily. After PS generated the original anonymized data, JM committed it to our repository and added a data loader with tests to ensure that if the data changed we would know. At this point, we (JM, PS) screened the anonymized data for transcription errors (e.g., duplicate rows). This involved writing a number of quality assurance tools (e.g., to find duplicate consecutive rows), which are now included in `permute`. Once we identified entries incompatible with our understanding of what should be in the data, JM wrote a `sed` script to “correct” the inferred typos. The exact commands used to clean the data are included in the commit corresponding to that cleaning step. After carefully examining the data for potential errors and documenting every change we made and why, we sent the cleaned data and an explanation of what we did to NS to verify that the corrections were appropriate. As a result, we provide the cleaned data in our project repository as well as a careful account of its provenance.
 
-Design algorithm (25 hours)
----------------------------
+#### Design algorithm (25 hours)
 
 Although the test we eventually implemented was very similar to the original test proposed by PS at the start of the project, we (JM, KO, PS) spent significant time focused on “problem appreciation,” some of which resulted in considerable simplification of the algorithm used to implement the test. We also developed a more general terminology (see Table 1).
 
@@ -93,8 +90,7 @@ We decided to assess rater reliability in identifying (i.e., tagging) each of th
 
 Since each of the videos contained different sessions of therapist-patient interactions, in general rated by different people, we stratified the test by video. A literature search for approaches to assessing IRR led us to conclude that there was no existing suitable method for several reasons: the experiment was stratified; there were multiple raters but not the same set for all videos; and standard methods required indefensible parametric assumptions or population models, which we hoped to avoid. After deciding to use permutation tests, we (JM, KO, PS) then determined that permuting each rater’s ratings within a video, independently across raters and across videos, made sense as the appropriate invariant under the null hypothesis. We chose to use concordance of ratings as our partial test statistic within each stratum. We (JM, PS) derived a simple expression for efficiently computing the concordance. To combine tests across strata, we (JM, KO, PS) used the nonparametric combination (NPC) of tests (Pesarin & Salmaso, 2010) with Fisher’s combining function. Finally, we developed a computationally efficient approach to finding the overall *p*-value for the NPC test.
 
-Implement algorithm (5 hours)
------------------------------
+#### Implement algorithm (5 hours)
 
 Once we had a blueprint of the algorithm, KO led the implementation effort. She did most of the coding; JM and PS reviewed the code and discussed the implementation. Following our software development practices, KO also wrote tests for every function she implemented. After a few iterations of coding, testing, and review, KO finalized our implementation and we merged it into `permute`.
 
@@ -106,8 +102,7 @@ KO wrote three functions to implement our general IRR algorithm:
 
 3.  a function to simulate the permutation distribution of the NPC test statistic by combining the *S* distributions of the IRR partial test statistic for each of the *S* strata.
 
-Analyze data (1 hour)
----------------------
+#### Analyze data (1 hour)
 
 Once we merged KO’s implementation of the general algorithm (including tests) into `permute`, KO wrote a short script (about 50 lines of Python) to analyze the cleaned data from NS.
 
@@ -127,8 +122,7 @@ Since we included the main workhorse functions in `permute`, the analysis script
 
 3.  Save the results to a CSV file
 
-Understand result (20 hours)
-----------------------------
+#### Understand result (20 hours)
 
 At a high level, even the summary statistics we computed were useful: some tags were never applied by any rater to any video. Presumably, the tag taxonomy could be simplified by eliminating those tags from the universe of labels, reducing the cognitive burden on the human raters. There were also tags that were used so frequently that high concordance was virtually guaranteed—and therefore high inter-rater concordance was not evidence of inter-rater reliability. This may also imply that any differences in efficacy of therapy are not attributable to whether the corresponding activity is taking place, since it is often taking place, at least in these sessions. Whether it makes sense to keep such tags in the taxonomy depends in part on subject matter knowledge: are those interactions typical only in the videos in these evaluation data, or are they typical of all therapeutic interventions with children on the autistic spectrum?
 
@@ -162,8 +156,7 @@ However, the computational practices described in this study (see Key tools and 
 
 As part of the development of our software package `permute`, we invested significant effort in setting up a development infrastructure to ensure our work is tracked, thoroughly and continually tested, and incrementally improved and documented. To this end, we have adopted best practices for software development used by successful open source projects (Millman & Pérez, 2014).
 
-Version control and code review
--------------------------------
+#### Version control and code review
 
 We (JM, KO, PS) use git as our version control system (VCS) and GitHub as the public hosting service for our official `upstream` repository [statlab/permute](https://github.com/statlab/permute). Each of us has our own copy, or fork, of the `upstream` repository. We each work on our own repositories and use the `upstream` repository as our coordination or integration repository.
 
@@ -171,8 +164,7 @@ This allows us to track and manage how our code changes over time and to review 
 
 Requiring all new code to undergo review provides several benefits. Code review increases the quality and consistency of our code. It helps maintain a high level of test coverage (see below). Moreover, it also helps keep the development team aware of the work other team members are doing. While we are currently a small team and we meet regularly, having the code review system in place will make it easier for new people to contribute as well as capturing our design discussions and decisions for future reference.
 
-Testing and continuous integration
-----------------------------------
+#### Testing and continuous integration
 
 We used the `nose` testing framework for automating our testing procedures. This is the standard testing framework used by the core packages in the scientific Python ecosystem. Automating testing allows us to monitor a proxy for code correctness when making changes as well as simplifying the code review process for new code. Without automated testing, we would have to manually test all the code every time a change is proposed. The `nose` testing framework simplifies test creation, discovery, and execution. It has an extensive set of plugins to add functionality for coverage reporting, test annotation, profiling, as well as inspecting and testing documentation.
 
@@ -182,13 +174,11 @@ We often work on several pull requests simultaneously. These pull requests may t
 
 Continuous integration works as follows: Each pull request (as well as a new commit to an existing pull request) triggers an automated system to run the full test suite on the updated code. Specifically, we have configured [Travis CI](https://travis-ci.org) and [`coveralls`](https://coveralls.io) to be automatically triggered whenever a commit is made to a pull request or the `upstream` master. These systems run the full test suite using different versions of our dependencies (e.g., Python 2.7 and 3.4) every time a new commit is made to a repository or a pull is requested. Travis CI checks that all the tests pass, while `coveralls` generates a test coverage report so that we can monitor what parts of our code are checked by a test and which are not. This system checks whether any of our automated tests fail as well as tracks the percentage of our code that is covered by our automated tests. This means that when you review a pull request, you can immediately see whether the proposed changes break any tests and whether the new code decreases the overall test coverage.
 
-Documentation
--------------
+#### Documentation
 
 We use Sphinx as our documentation system and have extensive developer documentation and the foundation for high-quality user documentation. Sphinx is the standard documentation system for Python and is used by the core scientific Python packages. We use Python docstrings and follow the [NumPy docstring standard](https://github.com/numpy/numpy/blob/master/doc/HOWTO_DOCUMENT.rst.txt) to document all the modules and functions in `permute`. Using Sphinx and some NumPy extensions, we have a system for autogenerating the project documentation (as HTML or PDF) using the docstrings as well as stand-alone text written in a light-weight markdown-like language, called [reStructuredText](http://docutils.sourceforge.net/rst.html). This system enables us to easily embed references, figures, code that is auto-run during documentation generation, as well as mathematics using LaTeX.
 
-Release management
-------------------
+#### Release management
 
 Our development workflow ensures that the official `upstream` repository is always stable and ready for use. This means anyone can install our official upstream master at any time and start using it. We also make official releases available as source tarballs and as Python built-packages uploaded to the Python Package Index, or PyPI, with release announcements posted to our mailing list.
 
@@ -198,8 +188,7 @@ By making official releases whenever we reach an important stage of an applied p
 
 ### Questions
 
-What does "reproducibility" mean to you?
-----------------------------------------
+#### What does "reproducibility" mean to you?
 
 In this case study, *reproducibility* means:
 
