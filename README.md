@@ -20,4 +20,5 @@ All text and figures in this book are copyright University of California Press.
 
 ##### Version History
 
+-   v1.0.1 - _repro-case-studies_ e7134cc, _repro-case-private_ 5e63c6e
 -   v1.0 - _repro-case-studies_ d5f5783, _repro-case-private_ 5e63c6e

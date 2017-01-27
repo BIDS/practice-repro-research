@@ -3,7 +3,7 @@ To update the online Gitbook, ensure that the _repro-case-studies_ and _repro-ca
 1.  Check out the most recent versions of the master branches of both repositories.
 2.  Run copy_chapters.py from within the build-book directory.
 3.  Edit the README.md file to bump the version history line at the bottom - include the SHA for the state of the the _repro-case-studies_ and _repro-case-private_ repositories when the contents of this repository were built.
-4.  Commit all changes made to this repository, using the version history line from the bottom of README.md as the commit message.
+4.  Commit all changes made to this repository, using the version history line from the bottom of README.md as the commit message. NOTE: You may want to avoid committing all of the new .png files if the underlying images haven't changed.
 5.  Push changes to this repository.
 6.  Confirm that Gitbook built the new book successfully.
 
