@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-* [READ ME FIRST](README.md)
+* [Front Matter](README.md)
 * [Table of Contents](TOC.md)
 * [Preface (Stark)](core-chapters/0-preface.md)
 * [Introduction (Kitzes)](core-chapters/1-intro.md)

@@ -1,6 +1,6 @@
 # Summary
 
-* [READ ME FIRST](README.md)
+* [Front Matter](README.md)
 * [Table of Contents](TOC.md)
 * [Preface](core-chapters/0-preface.md)
 * [Introduction](core-chapters/1-intro.md)
