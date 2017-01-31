@@ -1,5 +1,7 @@
 <!-- This needs to be kept manually in sync with SUMMARY.md, except note that here we add the author names to the chapter titles -->
 
+<div id="table-of-contents-page">
+
 # Table of Contents
 
 * [Front Matter](README.md)
@@ -52,3 +54,5 @@
 * [Developing a Reproducible Workflow for Large-scale Phenotyping (Poldrack)](case-studies/rpoldrack.md)
 * [Developing and Testing Stochastic Filtering Methods for Tracking Objects in Videos (Staneva)](case-studies/vstaneva.md)
 * [Developing, Testing, and Deploying Efficient MCMC Algorithms for Hierarchical Models Using R (Turek)](case-studies/dturek.md)
+
+</div>

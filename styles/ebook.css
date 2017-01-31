@@ -1,0 +1,54 @@
+/* Headers */
+
+.markdown-section h1 {
+    border-bottom: 2px solid #CCC;
+    padding-bottom: 0.25em;
+    line-height: 1.4;
+}
+
+.markdown-section h2 {
+    font-size: 1.25em;
+    line-height: 1.3;
+    margin-top: -0.75em;
+    margin-bottom: 1.25em;
+    font-variant: normal;
+}
+
+/* READ ME FIRST headers*/
+
+#the-practice-of-reproducible-research {
+    font-size: 2.25em;
+    text-align: center;
+    border-bottom: 0px;
+    padding-bottom: 0em;
+    margin-bottom: 0.5em;
+}
+
+#case-studies-and-lessons-from-the-data-intensive-sciences {
+    font-size: 1.2em;
+    margin-top: -0.5em;
+    text-align: center; 
+    font-variant: normal;
+}
+
+#justin-kitzes-daniel-turek-fatma-deniz-eds {
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    font-variant: normal;
+}
+
+#table-of-contents-page {
+    display: none !important;
+}
+
+/* Other */
+
+.gitbook-link {
+    display: none !important;
+}
+
+.section.toc .page {
+    display: none;
+}
