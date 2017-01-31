@@ -1,9 +1,14 @@
 {
-    "plugins": ["ga"],
+    "plugins": ["ga", "downloadpdf"],
     "pluginsConfig": {
         "ga": {
             "token": "UA-57377689-2",
             "configuration": "auto"
+        },
+        "downloadpdf": {
+            "base": "https://www.gitbook.com/download/pdf/book/bids/the-practice-of-reproducible-research",
+            "label": "Download PDF",
+            "multilingual": false
         }
     }
 }
