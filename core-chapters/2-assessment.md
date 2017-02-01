@@ -96,7 +96,7 @@ Proprietary file formats are problematic for reproducibility because they may no
 
 -   Are the dependencies of the software (hardware and software) described properly? Do these dependencies require only a reasonably minimal amount of effort to obtain and use? For example, if a research project requires the use of specialized hardware, it will be harder to reproduce. If it depends on expensive commercial software, likewise. Use of open-source software dependencies on commodity hardware is not always possible, but when possible electing to use these increases reproducibility.
 
-#### Software Documentation
+#### Software documentation
 
 Documentation of the software is another factor in removing barriers to re-use. Several forms of documentation can be added to a research repository and each of them adds to reproducibility. Relevant questions include:
 
@@ -148,7 +148,7 @@ Copyleft licenses allow distribution and modification of the software, but requi
 
 -   Is this license sufficiently permissive to allow others to use the software, reproduce the results and extend them?
 
-##### Proprietary information and software.
+#### Proprietary information and software
 
 Often authors may not make the data or software available due to external restrictions. We might ask the following questions to assess the effect these restrictions might have on reproducibility:
 
