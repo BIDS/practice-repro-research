@@ -14,7 +14,7 @@ Please cite _The Practice of Reproducible Research_ as:
 
 <p style="margin-left: 2em; margin-right: 2em">Kitzes, J., Turek, D., &amp; Deniz, F. (Eds.). (2017). <em>The Practice of Reproducible Research: Case Studies and Lessons from the Data-Intensive Sciences</em>. Oakland, CA: University of California Press.</p>
 
-This book was funded in part by the Gordon and Betty Moore Foundation through Grant GBMF3834 and by the Alfred P. Sloan Foundation through Grant 2013-10-27 to the University of California, Berkeley, as well as by grants from these foundations to the eSciences Institute of the University of Washington and the data sciences initiative at New York University.
+Many of the chapters in this book were written by authors affiliated with one of the three [Moore-Sloan Data Science Environments](http://msdse.org/): the [Berkeley Institute for Data Science](http://bids.berkeley.edu) at UC Berkeley, the [eScience Institute](http://escience.washington.edu/) at the University of Washington, and the [Center for Data Science](http://cds.nyu.edu/) at New York University. The editors and authors are particularly grateful for the financial and intellectual support of the the Gordon and Betty Moore Foundation (Grant GBMF3834 to UC Berkeley) and the Alfred P. Sloan Foundation (Grant 2013-10-27 to UC Berkeley).
 
 All text and figures in this book are copyright University of California Press.
 
