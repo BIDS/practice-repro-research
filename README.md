@@ -16,7 +16,7 @@ Please cite _The Practice of Reproducible Research_ as:
 
 Many of the chapters in this book were written by authors affiliated with one of the three [Moore-Sloan Data Science Environments](http://msdse.org/): the [Berkeley Institute for Data Science](http://bids.berkeley.edu) at UC Berkeley, the [eScience Institute](http://escience.washington.edu/) at the University of Washington, and the [Center for Data Science](http://cds.nyu.edu/) at New York University. The editors and authors are particularly grateful for the financial and intellectual support of the the Gordon and Betty Moore Foundation (Grant GBMF3834 to UC Berkeley) and the Alfred P. Sloan Foundation (Grant 2013-10-27 to UC Berkeley).
 
-All text and figures in this book are copyright University of California Press.
+The contents of this book are copyright University of California Press. Please feel free to share links to this website and to use these online materials for non-commercial, educational purposes. For other uses, including redistribution or reprinting, please contact [Justin Kitzes](mailto:jkitzes@berkeley.edu).
 
 ##### Version History
 
