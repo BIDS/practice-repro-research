@@ -66,17 +66,17 @@ Begley, C. G., & Ellis, L. M. (2012). Drug development: Raise standards for prec
 
 Begley, C. G., & Ioannidis, J. P. (2015). Reproducibility in science: Improving the standard for basic and preclinical research. *Circulation Research*, *116*(1), 116–126. <http://doi.org/10.1161/CIRCRESAHA.114.303819>
 
-Birnholtz, J. P., & Bietz, M. J. (2003). Data at work: Supporting sharing in science and engineering. In *Proceedings of the 2003 international aCM sIGGROUP conference on supporting group work* (pp. 339–348). ACM.
+Birnholtz, J. P., & Bietz, M. J. (2003). Data at work: Supporting sharing in science and engineering. In *Proceedings of the 2003 international acm siggroup conference on supporting group work* (pp. 339–348). ACM.
 
 Borgman, C. L. (2012). The conundrum of sharing research data. *Journal of the American Society for Information Science and Technology*, *63*(6), 1059–1078.
 
-Clarkson, C., Smith, M., Marwick, B., Fullagar, R., Wallis, L. A., Faulkner, P., … others. (2015). The archaeology, chronology and stratigraphy of madjedbebe (malakunanja iI): A site in northern australia with early occupation. *Journal of Human Evolution*, *83*, 46–64.
+Clarkson, C., Smith, M., Marwick, B., Fullagar, R., Wallis, L. A., Faulkner, P., … others. (2015). The archaeology, chronology and stratigraphy of madjedbebe (malakunanja ii): A site in northern australia with early occupation. *Journal of Human Evolution*, *83*, 46–64.
 
 Donnelly, M., & Jones, S. (2010). Template for a data management plan. *Digital Curation Centre. Retrieved July*, *12*, 2010.
 
 Dorch, S. (2012). On the citation advantage of linking to data: Astrophysics. Retrieved from <https://halshs.archives-ouvertes.fr/hprints-00714715/>
 
-Eglen, S., Marwick, B., Halchenko, Y., Hanke, M., Sufi, S., Gleeson, P., … Poline, J.-B. (2016). Towards standard practices for sharing computer code and programs in neuroscience. *BioRxiv*. <http://doi.org/10.1101/045104>
+Eglen, S., Marwick, B., Halchenko, Y., Hanke, M., Sufi, S., Gleeson, P., … Poline, J.-B. (2016). Towards standard practices for sharing computer code and programs in neuroscience. *bioRxiv*. <http://doi.org/10.1101/045104>
 
 Faniel, I. M., & Zimmerman, A. (2011). Beyond the data deluge: A research agenda for large-scale data sharing and reuse. *International Journal of Digital Curation*, *6*(1), 58–69.
 
@@ -92,7 +92,7 @@ Leipzig, J. (2016). A review of bioinformatic pipeline frameworks. *Briefings in
 
 Marwick, B. (2016). Computational reproducibility in archaeological research: Basic principles and a case study of their implementation. *Journal of Archaeological Method and Theory*, 1–27.
 
-Mesnard, O., & Barba, L. A. (2016). Reproducible and replicable cFD: It’s harder than you think. *ArXiv*, 1605.04339.
+Mesnard, O., & Barba, L. A. (2016). Reproducible and replicable cfd: It’s harder than you think. *arXiv*, 1605.04339.
 
 Michener, W. K., Brunt, J. W., Helly, J. J., Kirchner, T. B., & Stafford, S. G. (1997). Nongeospatial metadata for the ecological sciences. *Ecological Applications*, *7*(1), 330–342.
 

@@ -500,11 +500,11 @@ An XML (“Extensible Markup Language”) file stores data in XML, which is a ma
 
 ### References
 
-Chirigati, F., Shasha, D., & Freire, J. (2013). ReproZip: Using Provenance to Support Computational Reproducibility. In *Proceedings of the 5th uSENIX workshop on the theory and practice of provenance* (pp. 1:1–1:4).
+Chirigati, F., Shasha, D., & Freire, J. (2013). ReproZip: Using Provenance to Support Computational Reproducibility. In *Proceedings of the 5th usenix workshop on the theory and practice of provenance* (pp. 1:1–1:4).
 
 Dasu, T., & Johnson, T. (2003). *Exploratory data mining and data cleaning*. John Wiley & Sons.
 
-Davidson, S. B., & Freire, J. (2008). Provenance and Scientific Workflows: Challenges and Opportunities. In *Proceedings of the 2008 aCM sIGMOD international conference on management of data* (pp. 1345–1350).
+Davidson, S. B., & Freire, J. (2008). Provenance and Scientific Workflows: Challenges and Opportunities. In *Proceedings of the 2008 acm sigmod international conference on management of data* (pp. 1345–1350).
 
 Duvall, P. M., Matyas, S., & Glover, A. (2007). *Continuous integration: Improving software quality and reducing risk*. Pearson Education.
 
@@ -512,7 +512,7 @@ Fogel, K. (2005). *Producing open source software: How to run a successful free 
 
 Freire, J., & Silva, C. T. (2012). Making Computations and Publications Reproducible with VisTrails. *Computing in Science Engineering*, *14*(4), 18–25.
 
-Freire, J., Bonnet, P., & Shasha, D. (2012). Computational Reproducibility: State-of-the-art, Challenges, and Database Research Opportunities. In *Proceedings of the 2012 aCM sIGMOD international conference on management of data* (pp. 593–596).
+Freire, J., Bonnet, P., & Shasha, D. (2012). Computational Reproducibility: State-of-the-art, Challenges, and Database Research Opportunities. In *Proceedings of the 2012 acm sigmod international conference on management of data* (pp. 593–596).
 
 Freire, J., Koop, D., Santos, E., & Silva, C. T. (2008). Provenance for Computational Tasks: A Survey. *Computing in Science and Engineering*, *10*(3), 11–21.
 

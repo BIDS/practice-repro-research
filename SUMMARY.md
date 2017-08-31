@@ -50,3 +50,9 @@
 * [Developing a Reproducible Workflow for Large-scale Phenotyping](case-studies/rpoldrack.md)
 * [Developing and Testing Stochastic Filtering Methods for Tracking Objects in Videos](case-studies/vstaneva.md)
 * [Developing, Testing, and Deploying Efficient MCMC Algorithms for Hierarchical Models Using R](case-studies/dturek.md)
+
+### Appendix
+
+* [Maintaining a Reproducible Database on Political Parties, Elections, and Governments](case-studies/wkrause.md)
+* [Developing R Code for the Processing and Analysis of Optic Flow Data](case-studies/rgilmore.md)
+* [All or Nothing! Public Goods Provision under Partial versus Full Decentralization in Indonesia](case-studies/dsinghania.md)

@@ -341,7 +341,7 @@ Gorgolewski, K. J., Varoquaux, G., Rivera, G., Schwartz, Y., Sochat, V. V., Ghos
 
 Guo, P. (2012). CDE: A tool for creating portable experimental software packages. *Computing in Science & Engineering*, *14*(4), 32–35. Retrieved from <http://scitation.aip.org/content/aip/journal/cise/14/4/10.1109/MCSE.2012.36>
 
-Hunold, S., & Träff, J. L. (2013). On the State and Importance of Reproducible Experimental Research in Parallel Computing. *ArXiv:1308.3648 \[Cs\]*. Retrieved from <http://arxiv.org/abs/1308.3648>
+Hunold, S., & Träff, J. L. (2013). On the State and Importance of Reproducible Experimental Research in Parallel Computing. *arXiv:1308.3648 \[Cs\]*. Retrieved from <http://arxiv.org/abs/1308.3648>
 
 King, G. (2007). An introduction to the Dataverse Network as an infrastructure for data sharing. *Sociological Methods & Research*, *36*(2), 173–199. Retrieved from <http://smr.sagepub.com/content/36/2/173.short>
 

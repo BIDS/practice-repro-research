@@ -55,6 +55,12 @@
 <li><a href="case-studies/vstaneva.html">Developing and Testing Stochastic Filtering Methods for Tracking Objects in Videos (Staneva)</a></li>
 <li><a href="case-studies/dturek.html">Developing, Testing, and Deploying Efficient MCMC Algorithms for Hierarchical Models Using R (Turek)</a></li>
 </ul>
+<h3 id="part-iv-appendix">Appendix</h3>
+<ul>
+<li><a href="case-studies/wkrause.html">Maintaining a Reproducible Database on Political Parties, Elections, and Governments (Krause)</a></li>
+<li><a href="case-studies/rgilmore.html">Developing R Code for the Processing and Analysis of Optic Flow Data (Seisler)</a></li>
+<li><a href="case-studies/dsinghania.html">All or Nothing! Public Goods Provision under Partial versus Full Decentralization in Indonesia (Singhania)</a></li>
+</ul>
 
 </section>
 </div>

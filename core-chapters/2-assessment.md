@@ -214,9 +214,9 @@ Franklin, A., & Howson, C. (1984). Why do scientists prefer to vary their experi
 
 Goodman, S. N., Fanelli, D., & Ioannidis, J. P. A. (2016). What does research reproducibility mean? *Science Translational Medicine*, *8*(341), 341ps12–341ps12. <http://doi.org/10.1126/scitranslmed.aaf5027>
 
-Gorgolewski, K. J., Auer, T., Calhoun, V. D., Craddock, R. C., Das, S., Duff, E. P., … Poldrack, R. A. (2016). The brain imaging data structure: A standard for organizing and describing outputs of neuroimaging experiments. *BioRxiv*. <http://doi.org/10.1101/034561>
+Gorgolewski, K. J., Auer, T., Calhoun, V. D., Craddock, R. C., Das, S., Duff, E. P., … Poldrack, R. A. (2016). The brain imaging data structure: A standard for organizing and describing outputs of neuroimaging experiments. *bioRxiv*. <http://doi.org/10.1101/034561>
 
-Hajjem, C., Harnad, S., & Gingras, Y. (2006). Ten-year cross-disciplinary comparison of the growth of open access and how it increases research citation impact. *ArXiv Preprint Cs/0606079*.
+Hajjem, C., Harnad, S., & Gingras, Y. (2006). Ten-year cross-disciplinary comparison of the growth of open access and how it increases research citation impact. *arXiv Preprint Cs/0606079*.
 
 Hanke, M., Halchenko, Y. O., Sederberg, P. B., Hanson, S. J., Haxby, J. V., & Pollmann, S. (2009). PyMVPA: A python toolbox for multivariate pattern analysis of fMRI data. *Neuroinformatics*, *7*(1), 37–53.
 

@@ -90,4 +90,4 @@ Peng, R. D. (2009). Reproducible research and Biostatistics. *Biostatistics*, *1
 
 Pernet, C., & Poline, J. B. (2015). Improving functional magnetic resonance imaging reproducibility. *Gigascience*, *4*(15). <http://doi.org/http://dx.doi.org/10.1186/s13742-015-0055-8>
 
-Wandell, B. A., Rokem, A., Perry, L. M., Schaefer, G., & Dougherty, R. F. (2015). Data management to support reproducible research. *ArXiv*, 1502.06900v1.
+Wandell, B. A., Rokem, A., Perry, L. M., Schaefer, G., & Dougherty, R. F. (2015). Data management to support reproducible research. *arXiv*, 1502.06900v1.

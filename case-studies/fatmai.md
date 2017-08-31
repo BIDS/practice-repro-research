@@ -54,7 +54,7 @@ I think reproducible research allows faster progress in a researcher's own domai
 
 ### References
 
-Castelluccia, C., Duermuth, M., Golla, M., & Deniz, F. (2017). Towards implicit visual memory-based authentication. In *Network and distributed system security symposium (nDSS)*.
+Castelluccia, C., Duermuth, M., Golla, M., & Deniz, F. (2017). Towards implicit visual memory-based authentication. In *Network and distributed system security symposium (ndss)*.
 
 Imamoglu, F., Kahnt, T., Koch, C., & Haynes, J.-D. (2013). Changes in functional connectivity support conscious object recognition. *Neuroimage*, *63*, 1909–1917.
 
