@@ -4,7 +4,7 @@ Maintaining a Reproducible Database on Political Parties, Elections, and Governm
 Werner Krause and Dag Tanneberg
 -------------------------------
 
-> This chapter appears only in the online appendix of the book *The Practice of Reproducible Research*. Please cite this online version of the book as: Kitzes, J., Turek, D., & Deniz, F. (Eds.). (2018). The Practice of Reproducible Research: Case Studies and Lessons from the Data-Intensive Sciences \[Online Version\]. Retrieved from http://practicereproducibleresearch.org.
+> This chapter appears only in the online appendix of the book *The Practice of Reproducible Research*. Please cite this online version of the book as: Kitzes, J., Turek, D., & Deniz, F. (Eds.). (2018). The Practice of Reproducible Research: Case Studies and Lessons from the Data-Intensive Sciences \[Online Version\]. Retrieved from http://www.practicereproducibleresearch.org.
 
 Our names are Werner Krause and Dag Tanneberg. We graduated in Political Science with a focus on Comparative Politics. Currently, we are pursuing our doctoral degrees at the research department "Democracy and Democratization" located at the WZB Berlin Social Science Center, Germany.
 

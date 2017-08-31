@@ -20,7 +20,8 @@ The contents of this book are copyright University of California Press. Please f
 
 ##### Version History
 
--	v1.2 - _repro-case-studies_ 0b4653f, _repro-case-private_ bde1339
+-	v1.2.1 - _repro-case-studies_ 5eae781, _repro-case-private_ 45dc5a6
+-	v1.2 - _repro-case-studies_ 0b4653f, _repro-case-private_ 45dc5a6
 -   v1.1.1 - _repro-case-studies_ e77888d, _repro-case-private_ bde1339
 -   v1.1 - _repro-case-studies_ e77888d, _repro-case-private_ bde1339 (UC Press Feb3)
 -   v1.0.2 - _repro-case-studies_ ff064d0, _repro-case-private_ 31ed797π
