@@ -4,7 +4,7 @@
 
 ### Justin Kitzes, Daniel Turek, Fatma Deniz (Eds.)
 
-This is the open, online version of the book _The Practice of Reproducible Research_, to be published in print form by the University of California Press in 2018. 
+This is the open, online version of the book _The Practice of Reproducible Research_, published by the University of California Press. Print copies of the book can be purchased at [this link](https://www.ucpress.edu/book.php?isbn=9780520294752) or from other major booksellers.
 
 This book contains a collection of 31 case studies of reproducible research workflows, written by academic researchers in the data-intensive sciences. Each case study describes how the author combined specific tools, ideas, and practices in order to complete a real-world research project. Emphasis is placed on the practical aspects of how the author organized his or her research to make it as reproducible as possible.
 
