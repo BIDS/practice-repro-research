@@ -48,7 +48,7 @@ To assess the sufficiency of automation in a project, one might ask:
 
 The main question underlying these criteria is how difficult it would be for another researcher to first reproduce the results of a research project, and then further build upon these results. Because research is hard, and error is ubiquitous (a point made in this context by Donoho and colleagues (2008)), the first person to benefit from automation is often the researcher performing the original research, when hunting down and eliminating error.
 
-Provenance tracking is very closely related to automation (see glossary for definitions). It entails that the full chain of computational events that occurred from the raw data to a conclusion is tracked and documented. In cases in which automation is implemented, provenance trackingcan be instantiated and executed with a reasonably minimal effort.
+Provenance tracking is very closely related to automation (see glossary for definitions). It entails that the full chain of computational events that occurred from the raw data to a conclusion is tracked and documented. In cases in which automation is implemented, provenance tracking can be instantiated and executed with a reasonably minimal effort.
 
 When large data sets and complex analysis are involved, some processing steps may consume more time and computational resources than can be reasonably required to be repeatedly executed. In these cases, some other form of provenance tracking may serve to bolster reproducibility, even in the absence of a fully automatic processing pipeline. Items for assessment here are:
 
